@@ -1,8 +1,16 @@
+/* * * * * * * * *
+ *      body     *
+ * * * * * * * * */
+
 body {
     background-color: #33223C;
     font-family: 'Fauna One', serif;
     font-size: 16px;
 }
+
+/* * * * * * * * *
+ * float heading *
+ * * * * * * * * */
 
 #float-heading {
     overflow: hidden;
@@ -51,6 +59,29 @@ body {
     font-size: 24px;
     color: #FFFFFF;
 }
+
+/* * * * * * * * *
+ *    footer     *
+ * * * * * * * * */
+
+#foot {
+  color: white;
+}
+
+.left {
+    float: left;
+    display: block;
+    padding: 10px;
+}
+.right {
+    float: right;
+    display: block;
+    padding: 10px;
+}
+
+/* * * * * * * * *
+ *     other     *
+ * * * * * * * * */
 
 a.hidden-link:link {
     color: #000000;
