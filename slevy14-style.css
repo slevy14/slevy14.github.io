@@ -68,15 +68,19 @@ body {
   color: white;
 }
 
-.left {
+#foot a.left {
     float: left;
+    text-align: left;
     display: block;
     padding: 10px;
+    text-decoration: none;
 }
-.right {
+#foot a.right {
     float: right;
+    text-align: right;
     display: block;
     padding: 10px;
+    text-decoration: none;
 }
 
 /* * * * * * * * *
