@@ -1,0 +1,20 @@
+# Setup
+title:            Sammy Levy
+tagline:          'A portfolio of a college student'
+description:      'This is a test to see if this text ends up where i think it will in the sidebar'
+url:              https://slevy14.github.io/home
+baseurl:          ''
+paginate:         5
+
+# About and contact
+author:
+  name:           'Sammy Levy'
+  url:            https://github.com/slevy14/
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+
+# Custom vars
+version:          3.0.0

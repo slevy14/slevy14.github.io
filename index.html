@@ -1,42 +1,37 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title: Home
+---
 
-<!-- redirect to home -->
-<head>
-    <meta http-equiv="Refresh" content="0; url='https://slevy14.github.io/home/'" />
-</head>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-<!-- old homepage -->
-<!-- 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="slevy14-style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
-    <link rel="icon" type="image/x-icon" href="favicon.ico?">
-    <title>Slevy's Things</title>
-</head>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
 
-<body>
-	<div id="float-heading">
-        <a class="title">Sammy Levy</a>
-        <a class="subtitle">Projects, etc.</a>
-        <a href="contact.html" class="buttons">contact</a>
-        <a href="projects.html" class="buttons">projects</a>
-        <a href="about.html" class="buttons">about</a>
-        <a href="index.html" class="buttons">home</a>
-    </div>
-   	<div id="page-title">
-   		<h1>INDEX</h1>
-   	</div>
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
 
-<hr color="gray">
-
-	<div id="foot">
-		<a class="left">copyright me</a>
-		<a class="right">[placeholder for social media, button]</a>
-	</div>
- -->
-
-</body>
-
-</html>
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
