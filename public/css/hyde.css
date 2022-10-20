@@ -248,3 +248,22 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+/** MY THEMES **/
+/* Purple (Dark) */
+.theme-purple-dark .sidebar {
+  background-color: #4e2763;
+}
+.theme-purple-dark .content a,
+.theme-purple-dark .related-posts li a:hover {
+  color: #4e2763;
+}
+
+/* Purple (Light) */
+.theme-purple-light .sidebar {
+  background-color: #6b4181;
+}
+.theme-purple-light .content a,
+.theme-purple-light .related-posts li a:hover {
+  color: #6b4181;
+}
