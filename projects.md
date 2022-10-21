@@ -5,7 +5,7 @@ title: Projects
   
 -------------   
 
-#### [MAC 250 AR Experience](https://github.com/slevy14/mac250-ar-experience) *C#, Unity. &nbsp; 2021*  
+<h4>[MAC 250 AR Experience](https://github.com/slevy14/mac250-ar-experience)</h4> *C#, Unity. &nbsp; 2021*  
 
 A location-based, augmented reality mobile app developed in Unity.
 <details>
@@ -17,7 +17,7 @@ A location-based, augmented reality mobile app developed in Unity.
 
 -------------  
 
-#### Inn-Conspicuous *Document. &nbsp; 2019*
+<h4>Inn-Conspicuous</h4> *Document. &nbsp; 2019*
 
 A Game Design Document for a planned, cryptid-themed MMORPG.
 <details>
@@ -29,18 +29,18 @@ A Game Design Document for a planned, cryptid-themed MMORPG.
 
 -------------  
 
-#### [Custom Snake](https://github.com/slevy14/custom-snake-2019) *C#, Unity. &nbsp; 2018*
+<h4>[Custom Snake](https://github.com/slevy14/custom-snake-2019)</h4> *C#, Unity. &nbsp; 2018*
 
 My Interpretation of the classic "Snake" as a roguelike.
 <details>
 	<summary>learn more</summary>
 
-	Start from nothing, and unlock powerups, gameplay mechanics, and visual features! Check out the GitHub page [here.](https://github.com/slevy14/custom-snake-2019)
-	
+	Start from nothing and unlock powerups, gameplay mechanics, and visual features! Check out the GitHub page [here.](https://github.com/slevy14/custom-snake-2019)
+
 </details>
 
 -------------  
 
-#### Young Wizards *HTML, Twine &nbsp; 2021*  
+<h4>Young Wizards</h4> *HTML, Twine &nbsp; 2021*  
 
 A text-based hyperlink adventure game I made in Twine, based on childhood playground experiences. <a href="/twine/youngwizards.html" target="_blank" rel="noopener noreferrer">Playable Here!</a>
