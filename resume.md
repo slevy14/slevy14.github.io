@@ -2,6 +2,8 @@
 layout: page
 title: Resume
 ---
+  
+-------------  
 
 ### Education  
 
