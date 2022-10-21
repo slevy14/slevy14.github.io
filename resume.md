@@ -30,7 +30,7 @@ title: Resume
 
 ### Technical Skills  
 
-C\+\+, &nbsp;C\#, &nbsp;Unity, &nbsp;C, &nbsp;Java, &nbsp;Python, &nbsp;MIPS Assembly, &nbsp;Git, &nbsp;Microsoft Office  
+C\+\+, &nbsp;C\#, &nbsp;Unity, &nbsp;C, &nbsp;Java, &nbsp;Python, &nbsp;MIPS Assembly, &nbsp;Git, &nbsp;HTML, &nbsp;Microsoft Office  
 
 -------------  
 
