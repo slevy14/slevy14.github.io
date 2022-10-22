@@ -11,4 +11,8 @@ As I'm sure you could guess from the sidebar, name of the website, and landing p
 * I can solve a Rubik's cube in under 40 seconds
 * I've been doing improv for almost 10 years
 * I enjoy designing logos and graphics in Photoshop
-* I've rewatched Parks & Rec too many times
+* I've rewatched Parks & Rec too many times  
+
+------------  
+
+[Check out some stuff I made!](https://slevy14.github.io/projects.html)
