@@ -30,8 +30,8 @@ title: Resume
 
 ### Technical Skills  
 
-C\+\+, &nbsp;C\#, &nbsp;Unity, &nbsp;C, &nbsp;Java, &nbsp;Python, &nbsp;MIPS Assembly, &nbsp;Git, &nbsp;HTML, &nbsp;Microsoft Office  
+C\+\+, &nbsp;C\#, &nbsp;Unity, &nbsp;C, &nbsp;Java, &nbsp;Python, &nbsp;MIPS Assembly, &nbsp;Git, &nbsp;HTML, &nbsp;CSS, &nbsp;Microsoft Office  
 
 -------------  
 
-[\[View Full PDF\]](/Resume_Current.pdf)
+[\[View Full PDF\]](/Resume_10_22_2022.pdf)
