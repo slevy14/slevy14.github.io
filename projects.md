@@ -12,7 +12,7 @@ A location-based, augmented reality mobile app developed in Unity.
 <details>
 	<summary>learn more</summary>
 
-	Created as a semester long project in collaboration with a media arts class (who designed the art assets), the goal was to create an AR application to showcase their final work. Check out the GitHub page [here.](https://github.com/slevy14/mac250-ar-experience)
+	Created as a semester long project in collaboration with a media arts class (who designed the art assets), the goal was to create an AR application to showcase their final work. Check out the GitHub page <a href="https://github.com/slevy14/mac250-ar-experience">here.</a>
 
 </details>
 
