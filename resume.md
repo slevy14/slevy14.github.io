@@ -16,7 +16,7 @@ title: Resume
 
 **Resident Advisor** &nbsp; Occidental College &nbsp; *Present*  
 **Technical Director & Instructor** &nbsp; Chadwick School &nbsp; *Summers 2018 - 2022*   
-**Teacher's Aide** &nbsp; Chadwick School &nbsp; *2020 - 2021*   
+**Teacher's Aide, 5th Grade** &nbsp; Chadwick School &nbsp; *2020 - 2021*   
 
 -------------  
 
@@ -30,7 +30,7 @@ title: Resume
 
 ### Technical Skills  
 
-C\+\+, &nbsp;C\#, &nbsp;Unity, &nbsp;C, &nbsp;Java, &nbsp;Python, &nbsp;MIPS Assembly, &nbsp;Git, &nbsp;HTML, &nbsp;CSS, &nbsp;Microsoft Office  
+C\+\+, &nbsp;C\#, &nbsp;Unity, &nbsp;C, &nbsp;Java, &nbsp;Python, &nbsp;MIPS Assembly, &nbsp;Git, &nbsp;HTML, &nbsp;CSS, &nbsp;Photoshop  
 
 -------------  
 
