@@ -25,7 +25,7 @@ A Game Design Document for a planned, cryptid-themed MMORPG.
 <details>
 	<summary>learn more</summary>
 
-	This was a project for an Intro to Software Engineering class during my senior year of high school. While the game never left the early stages of development, I led the creation of a game design document to organize, plan, and design what we wanted the game to look like. You can check out the (somewhat completed) GDD here.
+	This was a project for an Intro to Software Engineering class during my senior year of high school. While the game never left the early stages of development, I led the creation of a game design document to organize, plan, and design what we wanted the game to look like. You can check out the (somewhat completed) GDD [here.](/Inn_Conspicuous_GDD.pdf)
 
 </details>
 
