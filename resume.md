@@ -12,6 +12,12 @@ title: Resume
 
 -------------  
 
+### Technical Skills  
+
+C\+\+, &nbsp;C\#, &nbsp;Unity, &nbsp;C, &nbsp;Java, &nbsp;Python, &nbsp;MIPS Assembly, &nbsp;Git, &nbsp;HTML, &nbsp;CSS, &nbsp;Photoshop  
+
+-------------  
+
 ### Work Experience  
 
 **Resident Advisor** &nbsp; Occidental College &nbsp; *Present*  
@@ -25,12 +31,6 @@ title: Resume
 **Stage Manager** &nbsp; Chadwick School & Occidental College    *2015 - 2021*  
 **Treasurer** &nbsp; Fantastiprov Improv Troupe &nbsp; *Present*  
 **Vice President** &nbsp; 2 Paws Up Sketch Comedy Club &nbsp; *Present*
-
--------------  
-
-### Technical Skills  
-
-C\+\+, &nbsp;C\#, &nbsp;Unity, &nbsp;C, &nbsp;Java, &nbsp;Python, &nbsp;MIPS Assembly, &nbsp;Git, &nbsp;HTML, &nbsp;CSS, &nbsp;Photoshop  
 
 -------------  
 
