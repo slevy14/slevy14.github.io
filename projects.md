@@ -38,7 +38,7 @@ My Interpretation of the classic "Snake" as a roguelike.
 <details>
 	<summary>learn more!</summary>
 
-	Start from nothing, and unlock powerups, gameplay mechanics, and visual features! Check out the GitHub page <a href="https://github.com/slevy14/custom-snake-2019">here.</a>
+	Start from nothing, and unlock powerups, gameplay mechanics, and visual features! Check out some screenshots and gifs <a href="https://slevy.github.io/custom-snake-screenshots.html">here.</a>
 
 </details>
 
