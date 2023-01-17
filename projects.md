@@ -34,7 +34,7 @@ A Game Design Document for a planned, cryptid-themed MMORPG.
 #### [Custom Snake](https://github.com/slevy14/custom-snake-2019)
 *C#, Unity. &nbsp; 2018*
 
-My Interpretation of the classic "Snake" as a roguelike.
+My Interpretation of the classic "Snake" as a roguelike. <a href="https://leafguy.itch.io/custom-snake-2019" target="_blank" rel="noopener noreferrer">Playable Here!</a>
 <details>
 	<summary>learn more!</summary>
 
