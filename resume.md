@@ -34,4 +34,4 @@ C\+\+, &nbsp;C\#, &nbsp;Unity, &nbsp;C, &nbsp;Java, &nbsp;Python, &nbsp;MIPS Ass
 
 -------------  
 
-[\[View Full PDF\]](/Resume_10_22_2022.pdf)
+[\[View Full PDF\]](/Resume_1_17_2023.pdf)
