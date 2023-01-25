@@ -39,6 +39,7 @@ My Interpretation of the classic "Snake" as a roguelike. <a href="https://leafgu
 	<summary>learn more!</summary>
 
 	Start from nothing, and unlock powerups, gameplay mechanics, and visual features! Check out some screenshots and gifs <a href="https://slevy14.github.io/custom-snake-screenshots.html">here.</a>
+	<iframe frameborder="0" src="https://itch.io/embed/1882665?linkback=true&amp;border_width=2&amp;link_color=aa759f" width="554" height="169"><a href="https://leafguy.itch.io/custom-snake-2019">Custom Snake (2019) by leafguy</a></iframe>
 
 </details>
 
