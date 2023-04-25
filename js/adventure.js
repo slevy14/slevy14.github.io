@@ -1,14 +1,37 @@
-var rooms = {
-    "room0" : "<p>You are on a beach. You see a wooden shack to the <b>north</b> and a cliff to the <b>south</b>.</p>"
+var currentRoom = "start";
+
+function changeRoom(dir) {
+    $('#game-text').append("<p>> " + dir + "</p>")
+    if (rooms[currentRoom].directions[dir] !== undefined) {
+        currentRoom = rooms[currentRoom].directions[dir];
+        $('#game-text').append("<p>" + rooms[currentRoom].description + "</p>");
+    } else {
+        $('#game-text').append("<p>You can't do that.</p>");
+    }
+
 }
 
 $(document).ready(function(){
-    $('#game-text').append(rooms["room0"]);
+    $('#game-text').append("<p>" + rooms.start.description + "</p>");
 
     $(document).keypress(function(key){
         if (key.which === 13 && $('#user-input').is(":focus")) {  // ENTER is pressed
-            var value = $('#user-input').val();
-            alert(value);
+            var value = $('#user-input').val().toLowerCase();
+
+            changeRoom(value);
+
+            document.getElementById('user-input').value = "";
+            window.scrollTo(0, document.body.scrollHeight);
+
+            // switch(value) {
+            //     case "north":
+            //         changeRoom("north")
+            //         break;
+            //     case "south":
+            //         changeRoom("south");
+            //         break;
+            //     default: alert("error");
+            // }
 
         }
     })
