@@ -62,3 +62,19 @@ My Interpretation of the classic "Snake" as a roguelike. <a href="https://leafgu
 *HTML, Twine &nbsp; 2021*  
 
 A text-based hyperlink adventure game I made in Twine, based on childhood playground experiences. <a href="/twine/youngwizards.html" target="_blank" rel="noopener noreferrer">Playable Here!</a>
+
+-------------
+
+## Writing
+
+-------------
+
+I also write and perform sketch comedy! These are some sketches that I have written and performed in.
+
+#### Writing   
+[I Thought You Said](https://www.youtube.com/watch?v=k-u8g8_H6pM) *Filmed Performance, 2023*
+[Lost in the Library](/lost_in_the_library.pdf) *Script, 2022*      
+#### Acting   
+[Snow](https://www.youtube.com/watch?v=Dl6sYwfsPhM) *Filmend Performance, 2023*   
+
+
