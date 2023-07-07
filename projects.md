@@ -5,6 +5,19 @@ title: Projects
   
 -------------   
 
+#### One Frog Band
+*C#, Unity. &nbsp; 2023*  
+
+A momentum-based action platformer game. Developed in Unity!
+<details>
+	<summary>learn more!</summary>
+
+	Play as Claude, a musical frog, as he platforms through a variety of levels to recover his stolen instruments. Created in a Game Design class with some friends. Screenshots and a playable demo coming soon!
+
+</details>
+
+-------------   
+
 #### [MAC 250 AR Experience](https://github.com/slevy14/mac250-ar-experience)
 *C#, Unity. &nbsp; 2021*  
 

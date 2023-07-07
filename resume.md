@@ -8,20 +8,21 @@ title: Resume
 ### Education  
 
 **B.A. Computer Science** &nbsp; Occidental College &nbsp; *2025 (expected)*   
-**Coursework**: &nbsp;Data Structures, Game Design (Spring ‘23), Algorithms (Spring ‘23), Cryptography (Spring ‘23), Computer Organization, Discrete Mathematics with Cryptography, Linear Algebra (Spring ‘23)    
+**Coursework**: &nbsp;Data Structures, Game Design, Algorithms, Computer Organization, Discrete Mathematics with Cryptography, Linear Algebra    
 
 -------------  
 
 ### Technical Skills  
 
-C\+\+, &nbsp;C\#, &nbsp;Unity, &nbsp;C, &nbsp;Java, &nbsp;Python, &nbsp;MIPS Assembly, &nbsp;Git, &nbsp;HTML, &nbsp;CSS, &nbsp;Photoshop  
+C\#, &nbsp;Unity, &nbsp;C, &nbsp;C\+\+, &nbsp;Java, &nbsp;Python, &nbsp;MIPS Assembly, &nbsp;Git, &nbsp;HTML, &nbsp;CSS, &nbsp;Photoshop  
 
 -------------  
 
 ### Work Experience  
 
+**Peer Tutor** &nbsp; Occidental College &nbsp; *Present*
 **Resident Advisor** &nbsp; Occidental College &nbsp; *Present*  
-**Technical Director & Instructor** &nbsp; Chadwick School &nbsp; *Summers 2018 - 2022*   
+**Technical Director & Instructor** &nbsp; Chadwick School &nbsp; *Summers 2018 - 2023*   
 **Teacher's Aide, 5th Grade** &nbsp; Chadwick School &nbsp; *2020 - 2021*   
 
 -------------  
