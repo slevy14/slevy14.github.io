@@ -20,7 +20,7 @@ C\#, &nbsp;Unity, &nbsp;C, &nbsp;C\+\+, &nbsp;Java, &nbsp;Python, &nbsp;MIPS Ass
 
 ### Work Experience  
 
-**Teacher's Aide (Intro to Programming)** &nbsp; Occidental College &nbsp; *Present* 
+**Teacher's Aide (Intro to Programming)** &nbsp; Occidental College &nbsp; *Present*    
 **Peer Tutor** &nbsp; Occidental College &nbsp; *Present*   
 **Resident Advisor** &nbsp; Occidental College &nbsp; *Present*  
 **Technical Director & Instructor** &nbsp; Chadwick School &nbsp; *Summers 2018 - 2023*   
