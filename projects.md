@@ -5,14 +5,15 @@ title: Projects
   
 -------------   
 
-#### One Frog Band
+#### [One Frog Band](https://leafguy.itch.io/one-frog-band)
 *C#, Unity. &nbsp; 2023*  
 
 A momentum-based action platformer game. Developed in Unity!
 <details>
 	<summary>learn more!</summary>
 
-	Play as Claude, a musical frog, as he platforms through a variety of levels to recover his stolen instruments. Created in a Game Design class with some friends. Screenshots and a playable demo coming soon!
+	Play as Claude, a musical frog, as he platforms through a variety of levels to recover his stolen instruments. Created in a Game Design class with some friends. Play the demo here!
+	<iframe src="https://itch.io/embed/2057483" width="552" height="167" frameborder="0"><a href="https://leafguy.itch.io/one-frog-band">One Frog Band by leafguy</a></iframe>
 
 </details>
 
