@@ -1,9 +1,12 @@
 var rooms = {
     "start" : {
-        "description" : "You are on a beach. You see a wooden shack to the <b>north</b> and a cliff to the <b>south</b>.",
+        "description" : "You are on a beach. You see a wooden shack to the <b>north</b> and a cliff to the <b>south</b>. There is also a <b>wizard</b>",
         "directions"  : {
             "north" : "shack-outside",
             "south" : "cliff"        
+        },
+        "npcs" : {
+            "wizard" : "The wizard approaches you and says \"Hey it\'s me the wizard\""
         }
     },
     "shack-outside" : {
@@ -24,6 +27,19 @@ var rooms = {
         "directions"  : {
             "east"  : "cliff",
             "north" : "start",
+        }
+    },
+
+    "template" : {
+        "description" : "placeholder",
+        "directions" : {
+            "directionA" : "placeholder"
+        },
+        "items" : {
+            "itemA" : "placeholder"
+        },
+        "npcs" : {
+            "npcA" : "placeholder"
         }
     }
 }
