@@ -21,7 +21,6 @@ function talkTo(npc) {
 }
 
 function takeItem(item) {
-    $('#game-text').append("<p>Attempting to take " + item + "</p>");
     if (rooms[currentRoom].items[item] !== undefined) {
         if (inventory.includes(item)) {
             $('#game-text').append("<p>You already have that item!</p>");
