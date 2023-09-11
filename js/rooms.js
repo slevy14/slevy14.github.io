@@ -1,12 +1,18 @@
 var rooms = {
     "start" : {
-        "description" : "You are on a beach. You see a wooden shack to the <b>north</b> and a cliff to the <b>south</b>. There is also a <b>wizard</b>",
+        "description" : "You are on a beach. You see a wooden shack to the <b>north</b> and a cliff to the <b>south</b>. There is also a <b>wizard</b> standing next to a <b>mushroom</b>.",
         "directions"  : {
             "north" : "shack-outside",
             "south" : "cliff"        
         },
         "npcs" : {
             "wizard" : "The wizard approaches you and says \"Hey it\'s me the wizard\""
+        },
+        "items" : {
+            "mushroom" : {
+                "name" : "mushroom",
+                "examination" : "it\'s a mushroom"
+            }
         }
     },
     "shack-outside" : {

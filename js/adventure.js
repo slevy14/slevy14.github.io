@@ -20,6 +20,19 @@ function talkTo(npc) {
     }
 }
 
+function takeItem(item) {
+    if (inventory.includes(item)) {
+        $('#game-text').append("<p>You already have that item!</p>");
+    } else {
+        if (rooms[currentRoom].items[item] !== undefined) {
+            inventory.push(item)
+            $('#game-text').append("<p>You picked up the " + rooms[currentRoom].items[item].name + "</p>");
+        } else {
+            $('#game-text').append("<p>You can't do that.</p>");
+        }
+    }
+}
+
 function showHelp() {
     $('#game-text').append("<p>Here are the possible commands: </p>");
     $('#game-text').append("<p><ul>");
@@ -55,6 +68,10 @@ function playerInput(input) {
                 var npc = input.split(" ")[2];
                 talkTo(npc);
             }
+            break;
+        case "take":
+            var item = input.split(" ")[1];
+            takeItem(item);
             break;
         case "help":
             showHelp();
