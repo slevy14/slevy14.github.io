@@ -1,5 +1,5 @@
 var currentRoom = "start";
-var commands = ["go [direction]", "take [object]", "examine [room]/[item]", "talk to [character]", "inventory", "help", "look"];
+var commands = ["go [direction]", "take [object]", "examine [room]/[item]", "talk to [character]", "inventory", "help", "look", "where"];
 var inventory = [];
 
 function changeRoom(dir) {
@@ -48,6 +48,21 @@ function showHelp() {
     $('#game-text').append("<p><ul>");
     for (var i = 0; i < commands.length; i++) {
         $('#game-text').append("<li>" + commands[i] + "</li>");
+    }
+    $('#game-text').append("</ul></p>");
+}
+
+function listDirections() {
+    $('#game-text').append("<p>Here are the possible directions from your current location (try to do this only if you really need help!): </p>");
+    
+    var moves = [];
+    for (const [key, value] of Object.entries(rooms[currentRoom].directions)) {
+        moves.push(key);
+    }
+
+    $('#game-text').append("<p><ul>");
+    for (var i = 0; i < moves.length; i++) {
+        $('#game-text').append("<li>" + moves[i] + "</li>");
     }
     $('#game-text').append("</ul></p>");
 }
@@ -110,6 +125,9 @@ function playerInput(input) {
             break;
         case "help":
             showHelp();
+            break;
+        case "where":
+            listDirections();
             break;
         case "inventory":
             showInventory();
