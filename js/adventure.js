@@ -1,5 +1,5 @@
 var currentRoom = "start";
-var commands = ["go [direction]", "take [object]", "examine [room]/[item]", "talk to [character]", "inventory", "help"];
+var commands = ["go [direction]", "take [object]", "examine [room]/[item]", "talk to [character]", "inventory", "help", "look"];
 var inventory = [];
 
 function changeRoom(dir) {
@@ -26,8 +26,18 @@ function takeItem(item) {
             $('#game-text').append("<p>You already have that item!</p>");
             return;
         }
-        inventory.push(item)
+        inventory.push(rooms[currentRoom].items[item])
         $('#game-text').append("<p>You picked up the " + rooms[currentRoom].items[item].name + "</p>");
+    } else {
+        $('#game-text').append("<p>You can't do that.</p>");
+    }
+}
+
+function examineItem(item) {
+    if (inventory.includes(item)) {
+        $('#game-text').append("<p>You examine the " + inventory[item].name + ". " + inventory[item].examination + "</p>");
+    } else if (rooms[currentRoom].items[item] !== undefined) {
+        $('#game-text').append("<p>You examine the " + rooms[currentRoom].items[item].name + ". " + rooms[currentRoom].items[item].examination + "</p>");
     } else {
         $('#game-text').append("<p>You can't do that.</p>");
     }
@@ -50,7 +60,7 @@ function showInventory() {
     $('#game-text').append("<p>Here is your current inventory: </p>");
     $('#game-text').append("<p><ul>");
     for (var i = 0; i < inventory.length; i++) {
-        $('#game-text').append("<li>" + inventory[i] + "</li>");
+        $('#game-text').append("<li>" + inventory[i].name + "</li>");
     }
     $('#game-text').append("</ul></p>");
 }
@@ -61,17 +71,42 @@ function playerInput(input) {
     switch(command) {
         case "go":
             var dir = input.split(" ")[1];
+            if (dir === undefined) {
+                $('#game-text').append("<p>Go where?</p>");
+                break;
+            }
             changeRoom(dir);
             break;
         case "talk":
             if ((input.split(" ")[1] === "to")||(input.split(" ")[1] === "with")) {
                 var npc = input.split(" ")[2];
+                if (npc === undefined) {
+                    $('#game-text').append("<p>Talk to whom?</p>");
+                    break;
+                }
                 talkTo(npc);
+            } else {
+                $('#game-text').append("<p>Talk to whom?</p>");
             }
             break;
         case "take":
             var item = input.split(" ")[1];
+            if (item === undefined) {
+                $('#game-text').append("<p>Take what?</p>");
+                break;
+            }
             takeItem(item);
+            break;
+        case "examine":
+            var item = input.split(" ")[1];
+            if (item === undefined) {
+                $('#game-text').append("<p>Examine what?</p>");
+                break;
+            }
+            examineItem(item);
+            break;
+        case "look":
+            $('#game-text').append("<p>" + rooms[currentRoom].description + "</p>");
             break;
         case "help":
             showHelp();
@@ -95,16 +130,6 @@ $(document).ready(function(){
 
             document.getElementById('user-input').value = "";
             window.scrollTo(0, document.body.scrollHeight);
-
-            // switch(value) {
-            //     case "north":
-            //         changeRoom("north")
-            //         break;
-            //     case "south":
-            //         changeRoom("south");
-            //         break;
-            //     default: alert("error");
-            // }
 
         }
     })
