@@ -21,15 +21,16 @@ function talkTo(npc) {
 }
 
 function takeItem(item) {
-    if (inventory.includes(item)) {
-        $('#game-text').append("<p>You already have that item!</p>");
-    } else {
-        if (rooms[currentRoom].items[item] !== undefined) {
-            inventory.push(item)
-            $('#game-text').append("<p>You picked up the " + rooms[currentRoom].items[item].name + "</p>");
-        } else {
-            $('#game-text').append("<p>You can't do that.</p>");
+    $('#game-text').append("<p>Attempting to take " + item + "</p>");
+    if (rooms[currentRoom].items[item] !== undefined) {
+        if (inventory.includes(item)) {
+            $('#game-text').append("<p>You already have that item!</p>");
+            return;
         }
+        inventory.push(item)
+        $('#game-text').append("<p>You picked up the " + rooms[currentRoom].items[item].name + "</p>");
+    } else {
+        $('#game-text').append("<p>You can't do that.</p>");
     }
 }
 

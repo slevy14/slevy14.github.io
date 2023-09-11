@@ -21,7 +21,10 @@ var rooms = {
             "south" : "start"
         },
         "items" : {
-            "itemA" : "placeholder"
+            "mushroom" : {
+                "name" : "mushroom",
+                "examination" : "it\'s a mushroom"
+            }
         },
         "npcs" : {
             "npcA" : "placeholder"
@@ -34,7 +37,10 @@ var rooms = {
             "west"  : "ocean"
         },
         "items" : {
-            "itemA" : "placeholder"
+            "mushroom" : {
+                "name" : "mushroom",
+                "examination" : "it\'s a mushroom"
+            }
         },
         "npcs" : {
             "npcA" : "placeholder"
@@ -47,20 +53,10 @@ var rooms = {
             "north" : "start",
         },
         "items" : {
-            "itemA" : "placeholder"
-        },
-        "npcs" : {
-            "npcA" : "placeholder"
-        }
-    },
-
-    "template" : {
-        "description" : "placeholder",
-        "directions" : {
-            "directionA" : "placeholder"
-        },
-        "items" : {
-            "itemA" : "placeholder"
+            "mushroom" : {
+                "name" : "mushroom",
+                "examination" : "it\'s a mushroom"
+            }
         },
         "npcs" : {
             "npcA" : "placeholder"
