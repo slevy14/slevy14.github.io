@@ -37,7 +37,7 @@ function examineItem(item) {
     if (inventory.includes(item)) {
         $('#game-text').append("<p>You examine the " + inventory[item].name + ". " + inventory[item].examination + "</p>");
     } else if (rooms[currentRoom].items[item] !== undefined) {
-        $('#game-text').append("<p>You examine the " + rooms[currentRoom].items[item].name + ". " + rooms[currentRoom].items[item].examination + "</p>");
+        $('#game-text').append("<p>You examine the " + rooms[currentRoom].items[item].name + ": " + rooms[currentRoom].items[item].examination + "</p>");
     } else {
         $('#game-text').append("<p>You can't do that.</p>");
     }

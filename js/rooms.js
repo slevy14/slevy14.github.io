@@ -60,7 +60,7 @@ var rooms = {
         }
     },
     "lab-entrance" : {
-        "description" : "Stepping through the doorway, the flourescent lights take you by surprise. As your eyes adjust, you notice a figure in a labcoat tinkering with an apparently damaged cluster of wires. A <b>scientist</b>, as it would seem.",
+        "description" : "Stepping through the doorway, the fluorescent lights take you by surprise. As your eyes adjust, you notice a figure in a labcoat tinkering with an apparently damaged cluster of wires. A <b>scientist</b>, as it would seem.",
         "directions"  : {
             "left"  : "arcade",
             "right" : "experiments",
@@ -74,19 +74,27 @@ var rooms = {
         }
     },
     "arcade" : {
-        "description" : "under construction! go <b>back</b>",
+        "description" : "You walk down the hallway to the left. The sounds of lasers, pinball machines, and the beep-boops of classic arcade machines flood your ears. Laughing children run past you from game to game as their annoyed parents try to keep up. A few games catch your eye, along with strange figures standing nearby:<br><br>An action-platformer with a <b>frog</b> leaning against the machine.<br>A text-based adventure (not this one, but how meta!) currently being played by a <b>kid</b> dressed as Harry Potter.<br>A roguelike with a <b>snake</b> wrapped around the joystick.<br>An out-of-order MMO being worked on by a creature that can only be described as looking something like <b>bigfoot</b>.<br><br>An overly-enthusiastic <b>employee</b> can be seen standing at a prize desk. You can also go <b>back</b> to the entrance.",
         "directions"  : {
             "back"  : "lab-entrance",
         },
         "items" : {
+            "keyboard" : {
+                "name" : "Keyboard of Legend",
+                "examination" : "A <b>relic</b> recieved from visiting the lab. Go back if you want to play some games!"
+            }
 
         },
         "npcs" : {
-            
+            "employee" : "\"HIYA!\" shouts the overly-enthusiastic employee. \"Welcome to the arcade! We have lots of games for you to play, just talk to the people by the cabinets. You can go also <b>back</b> to the entrance if you want to visit the experimentation wing, but we'll miss ya! Oh, and you can get the relic, the <b>Keyboard</b> of Legend, here from me too!",
+            "frog" : "You approach the frog. \"How's it going,\" he starts, \"the name's Claude. Despite my appearence, I'm actually a traveling musician. At least, I was, until my instruments were stolen. Come with me on a quest around the world to recover my stolen instruments in the demo for <a href=\"https://leafguy.itch.io/one-frog-band\" target=\"_blank\" rel=\"noopener noreferrer\">One Frog Band</a>, a game created by Sammy Levy, Max Cheng, Bryanna Hernandez, and Nick Novak! The game was made in Unity 2023 in a game design class, with a full Game Design Document alongside it.\"",
+            "kid" : "\"Abra Kadabra!\" yells the kid as he turns around. \"At least, I think that's a spell. Anyways, <a href=\"https://slevy14.github.io/twine/youngwizards.html\" target=\"_blank\" rel=\"noopener noreferrer\">Young Wizards</a> is a game created by Sammy in the Twine engine that explores the experience of being a child on a playground. Short but sweet!\"",
+            "snake" : "\"Howdy, pardner!\" the snake hisses as you approach, tipping her cowboy hat with her tail. \"I just finished a run of <a href=\"https://leafguy.itch.io/custom-snake-2019\" target=\"_blank\" rel=\"noopener noreferrer\">Custom Snake</a>, a game that Sammy created in high school for an AP Computer Science class. It's an implementation of the classic Snake as a roguelike. Score big, get upgrades, get bigger scores, get bigger upgrades, and so on! Check it out!\"",
+            "bigfoot" : "Yep, that's bigfoot. He approaches you with a stack of papers. \"Sorry, machine's out of order. <a href=\"https://slevy14.github.io/Inn_Conspicuous_GDD.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Inn Conspicuous</a> is an MMO created by Sammy and some friends in a software engineering course. While the game was never built beyond very early prototypes, the Game Design Document was largely completed. Give it a read if you want some behind-the-scenes info!",
         }
     },
     "experiments" : {
-        "description" : "under construction! go <b>back</b>",
+        "description" : "You walk down the hallway to the right. Stepping into even brighter fluorescent light, you see strange contraptions all around you. Various machines whir and click at seemingly random intervals. A <b>gnome</b> with safety goggles on presses a button, which causes something to blow up. You can also go <b>back</b> to the entrance.",
         "directions"  : {
             "back"  : "lab-entrance",
         },
@@ -94,13 +102,13 @@ var rooms = {
 
         },
         "npcs" : {
-            
+            "gnome" : "\"Ohoho, welcome to the experimentation wing!\" exclaims the gnome, excitedly shaking both of your hands at the same time. \"Sammy's big project here was the <a href=\"https://slevy14.github.io/mac250-screenshots.html\" target=\"_blank\" rel =\"noopener noreferrer\">MAC 250 AR Experience</a>, a mobile app built in unity that used Augmented Reality and Map Data to showcase digital art installations around his college campus. Click on the link for screenshots!\" The gnome scampers away, finding another button to press, causing another explosion.",
         }
     },
 
     // CABIN PATH
     "cabin" : {
-        "description" : "cabin. go <b>back</b>",
+        "description" : "cabin under construction! go <b>back</b>",
         "directions"  : {
             "back"  : "rune-ruins",
         },
@@ -114,7 +122,7 @@ var rooms = {
 
     // THEATER PATH
     "woodland-theater" : {
-        "description" : "woodland theater. go <b>back</b>",
+        "description" : "woodland theater under construction! go <b>back</b>",
         "directions"  : {
             "back"  : "rune-ruins",
         },
@@ -128,7 +136,7 @@ var rooms = {
 
     // BRIDGE PATH
     "bridge" : {
-        "description" : "bridge. go <b>back</b>",
+        "description" : "bridgeunder construction! go <b>back</b>",
         "directions"  : {
             "back"  : "rune-ruins",
         },
