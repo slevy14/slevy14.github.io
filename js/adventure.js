@@ -138,6 +138,7 @@ function playerInput(input) {
 }
 
 $(document).ready(function(){
+    showHelp();
     $('#game-text').append("<p>" + rooms.start.description + "</p>");
 
     $(document).keypress(function(key){
