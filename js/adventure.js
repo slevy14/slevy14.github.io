@@ -1,5 +1,5 @@
 var currentRoom = "start";
-var commands = ["go [direction]", "take [object]", "examine [room]/[item]", "talk to [character]", "inventory", "help", "look", "where"];
+var commands = ["go [direction]", "take [item]", "examine [item]", "talk to [character]", "inventory", "help", "look", "where"];
 var inventory = [];
 
 function changeRoom(dir) {
