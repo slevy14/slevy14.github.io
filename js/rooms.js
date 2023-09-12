@@ -63,7 +63,7 @@ var rooms = {
         "description" : "Stepping through the doorway, the flourescent lights take you by surprise. As your eyes adjust, you notice a figure in a labcoat tinkering with an apparently damaged cluster of wires. A <b>scientist</b>, as it would seem.",
         "directions"  : {
             "left"  : "arcade",
-            "right" : "experiments"
+            "right" : "experiments",
             "back" : "laboratory"
         },
         "items" : {
