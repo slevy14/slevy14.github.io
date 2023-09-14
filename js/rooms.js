@@ -135,12 +135,68 @@ var rooms = {
         "description" : "The lumberjack greets you with a warm smile. You take a sip of the tea, experiencing a flavor palette unfamiliar to you. \"It's a custom blend,\" he starts, \"Sammy found it recently at a <a href=\"https://www.racertea.com/\" target=\"_blank\" rel=\"noopener noreferrer\"local tea shop.</a> Tastes like a banana nut muffin. Wild.\" The <b>lumberjack</b> takes a sip of his tea.",
         "directions"  : {
             "back"  : "cabin-porch",
+            "couch" : "couch"
         },
         "items" : {
 
         },
         "npcs" : {
-            "lumberjack" : "You introduce yourself to the lumberjack. \"Oh, I know who you are. Another relic seeker. Yep, got one here too. I'm an old friend of Sammy's. In fact, I know everything about him.\" His gaze turns to a photo hanging on the wall of Sammy with some friends in middle school. \"Good times. Y'know, he used to wear that goofy hat all the time. Glad he finally came around on that one, he has much cooler hats now.\"<br><br>The lumberjack takes another sip of his tea, burning his mouth just a little bit. \"Well, let's start with what you probably already know. Sammy is a Computer Science major at Occidental College in LA. He's also minoring in Education and Math, and is interested in pursuing game design and/or CS education. If you want to learn more about his game design endeavors, you should head over to the lab when you're done here.\"",
+            "lumberjack" : "You introduce yourself to the lumberjack. \"Oh, I know who you are. Another relic seeker. Yep, got one here too. I'm an old friend of Sammy's. In fact, I know everything about him.\" His gaze turns to a photo hanging on the wall of Sammy with some friends in middle school. \"Good times. Y'know, he used to wear that goofy hat all the time. Glad he finally came around on that one, he has much cooler hats now.\"<br><br>The lumberjack takes another sip of his tea, burning his mouth just a little bit. \"Well, let's start with what you probably already know. Sammy is a Computer Science major at Occidental College in LA. He's also minoring in Education and Math, and is interested in pursuing game design and/or CS education. If you want to learn more about his game design endeavors, you should head over to the lab when you're done here.\"<br><br>He finishes his tea with a final loud sip, and continues. \"If you want the relic though, you'll have to learn a little bit more. Ever played two truths and a lie? Answer correctly, and you'll find yourself with another relic.\" He sets his mug down gently and moves to the <b>couch</b>",
+        }
+    },
+    "couch" : {
+        "description" : "\"Alright,\" the lumbejack says as he makes himself comfortable on the couch, \"here's how this is going to work. I'm going to give you 3 facts about Sammy, but one of them will be a lie. If you think you've spotted the lie, <b>go with</b> that answer. Ready? Which of these is a lie:<ul><li>He can solve a Rubik's <b>cube</b> in under a minute.</li><li>He drinks a lot of Mountain <b>Dew</b></li><li>He enjoys making logos and graphics in <b>Photoshop</b></li></ul> Remember to <b>go with</b> the <i>lie</i>\"",
+        "directions"  : {
+            "dew" : "right-1",
+            "cube" : "wrong",
+            "photoshop" : "wrong",
+        },
+        "items" : {
+
+        },
+        "npcs" : {
+            
+        }
+    },
+    "right-1" : {
+        "description" : "\"That's it! His record with the cube is about 38 seconds, and he's been working with photoshop for years. Mountain Dew, on the other hand, he finds unappealing.\" The lumberjack reaches for where a mug would be, but he realizes that he left it at the table and gives up. \"Next one:<ul><li>He's <b>rewatched</b> Parks and Rec many many times</li><li>He's a <b>cat</b> person</li><li>He's been doing <b>improv</b> for 10 years</li></ul> Remember to <b>go with</b> the <i>lie</i>\"",
+        "directions"  : {
+            "cat" : "right-2",
+            "rewatched" : "wrong",
+            "improv" : "wrong",
+        },
+        "items" : {
+
+        },
+        "npcs" : {
+            
+        }
+    },
+    "right-2" : {
+        "description" : "\"Right again! Parks and Rec has been a favorite since middle school, which is coincidentally around when he started doing improv too. He's actually a dog person, not a cat person.\" The lumberjack adjusts the pillow behind his back but is ultimately unable to find a comfortable position. He just sits there, slightly uncomfortable. \"Last one:<ul><li>He's <b>rewatched</b> Parks and Rec many many times</li><li>He's a <b>cat</b> person</li><li>He's been doing <b>improv</b> for 10 years</li></ul> Remember to <b>go with</b> the <i>lie</i>\"",
+        "directions"  : {
+            "cat" : "win-quiz",
+            "rewatched" : "wrong",
+            "improv" : "wrong",
+        },
+        "items" : {
+
+        },
+        "npcs" : {
+            
+        }
+    },
+    "wrong" : {
+        "description" : "\"Oh, sorry, that's not it. Wanna give it another go?\" You can go <b>back</b> to try again.",
+        "directions"  : {
+            "couch" : "couch",
+            "back" : "couch",
+        },
+        "items" : {
+
+        },
+        "npcs" : {
+            
         }
     },
 

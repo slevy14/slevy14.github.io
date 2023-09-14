@@ -18,7 +18,7 @@ function changeRoom(dir) {
         currentRoom = rooms[currentRoom].directions[dir];
         $('#game-text').append("<p>" + rooms[currentRoom].description + "</p>");
     } else {
-        $('#game-text').append("<p>You can't do that from here.</p>");
+        $('#game-text').append("<p>You can't do that</p>");
     }
 
 }
@@ -107,7 +107,7 @@ function playerInput(input) {
     switch(command) {
         case "go":
             var dir = input.split(" ")[1];
-            if (dir === "to") {
+            if (dir === "to" || dir === "with") {
                 dir = input.split(" ")[2];
             }
             if (dir === undefined) {
