@@ -122,7 +122,7 @@ var rooms = {
         "description" : "A comforting voice invites you into the cabin. Stepping onto the porch, you see a rustic looking table set with two cups of tea. A lumberjack waves to you and gestures to a chair opposite him. You can go <b>to table</b>, or turn around and go <b>back</b>",
         "directions"  : {
             "back"  : "cabin",
-            "to table" : "table",
+            "table" : "table",
         },
         "items" : {
 
@@ -132,7 +132,7 @@ var rooms = {
         }
     },
     "table" : {
-        "description" : "The lumberjack greets you with a warm smile. You take a sip of the tea, experiencing a flavor palette unfamiliar to you. \"It's a custom blend,\" he starts, \"Sammy found it recently at a <a href=\"https://www.racertea.com/\" target=\"_blank\" rel=\"noopener noreferrer\"local tea shop.</a> Tastes like a banana nut muffin. Wild.\" The <b>lumberjack</b> takes a sip of his tea.",
+        "description" : "The lumberjack greets you with a warm smile. You take a sip of the tea, experiencing a flavor palette unfamiliar to you. \"It's a custom blend,\" he starts, \"Sammy found it recently at a <a href=\"https://www.racertea.com/\" target=\"_blank\" rel=\"noopener noreferrer\">local tea shop.</a> Tastes like a banana nut muffin. Wild.\" The <b>lumberjack</b> takes a sip of his tea.",
         "directions"  : {
             "back"  : "cabin-porch",
             "couch" : "couch"
@@ -173,11 +173,11 @@ var rooms = {
         }
     },
     "right-2" : {
-        "description" : "\"Right again! Parks and Rec has been a favorite since middle school, which is coincidentally around when he started doing improv too. He's actually a dog person, not a cat person.\" The lumberjack adjusts the pillow behind his back but is ultimately unable to find a comfortable position. He just sits there, slightly uncomfortable. \"Last one:<ul><li>He's <b>rewatched</b> Parks and Rec many many times</li><li>He's a <b>cat</b> person</li><li>He's been doing <b>improv</b> for 10 years</li></ul> Remember to <b>go with</b> the <i>lie</i>\"",
+        "description" : "\"Right again! Parks and Rec has been a favorite since middle school, which is coincidentally around when he started doing improv too. He's actually a dog person, not a cat person.\" The lumberjack adjusts the pillow behind his back but is ultimately unable to find a comfortable position. He just sits there, slightly uncomfortable. \"Last one:<ul><li>His favorite <b>movie</b> is Fantastic Mr. Fox</li><li>He loves to <b>crochet</b></li><li>He plays <b>piano</b></li></ul> Remember to <b>go with</b> the <i>lie</i>\"",
         "directions"  : {
-            "cat" : "win-quiz",
-            "rewatched" : "wrong",
-            "improv" : "wrong",
+            "piano" : "win-quiz",
+            "movie" : "wrong",
+            "crochet" : "wrong",
         },
         "items" : {
 
@@ -186,8 +186,23 @@ var rooms = {
             
         }
     },
+    "win-quiz" : {
+        "description" : "\"You know him so well! Fantastic Mr. Fox is a classic, and he's been crocheting for a few years now. He played a tiiiiny bit of piano as a kid, but other hobbies took precedence.\" The lumberjack reaches into his pocket and pulls out a Rubik's <b>Cube</b>. \"The next relic. <b>Take</b> it, you earned it! Don't leave without it, but there's a shortcut <b>through</b> this door that takes you back to the Ruined Runes.\" The lumberjack shakes your hand, and gives you an approving nod.",
+        "directions"  : {
+            
+        },
+        "items" : {
+            "cube" : {
+                "name" : "The Spectral Cube (cube)",
+                "examination" : "A <b>relic</b> recieved from visiting the cabin. Go back if you want to learn about Sammy!"
+            }
+        },
+        "npcs" : {
+            
+        }
+    },
     "wrong" : {
-        "description" : "\"Oh, sorry, that's not it. Wanna give it another go?\" You can go <b>back</b> to try again.",
+        "description" : "\"Oh, that one is actually true! Wanna give it another go?\" You can go <b>back</b> to try again.",
         "directions"  : {
             "couch" : "couch",
             "back" : "couch",
