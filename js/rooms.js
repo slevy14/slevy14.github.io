@@ -1,10 +1,9 @@
 var rooms = {
     // START PATH
     "start" : {
-        "description" : "You awake in an ominous forest. Just like, ominous vibes. NOT chill. You're surrounded by trees on all sides, except for dark path <b>forwards</b>.",
+        "description" : "You awake in an ominous forest. Just like, ominous vibes. NOT chill. You're surrounded by trees on all sides, except for dark path <b>forward</b>.",
         "directions"  : {
-            "forwards" : "dark-path",
-            "forward" : "dark-path"        
+            "forward" : "dark-path",    
         },
         "npcs" : {
             
@@ -16,8 +15,7 @@ var rooms = {
     "dark-path" : {
         "description" : "As you walk along the dark path, you notice a faint glow in the distance. <b>Forward</b> still seems to be the only way to go. There is a <b>mushroom</b> on the ground.",
         "directions"  : {
-            "forwards" : "rune-ruins",
-            "forward" : "rune-ruins"
+            "forward" : "rune-ruins",
         },
         "items" : {
             "mushroom" : {
@@ -41,7 +39,7 @@ var rooms = {
             
         },
         "npcs" : {
-            "crystal" : "You get closer to the crystal. As you take each step forwards, it begins to spin faster and faster, glowing brighter and brighter. After being temporarily stunned by the light, you reopen your eyes to a glowing blue expanse, nothing as far as the eye can see. A voice speaks to you, the same as before, but now coming from all around you.<br><br>\"hey,\" it says \"glad someone finally found me. i'm sammy, the guy who's website you're on. a wizard trapped me here years ago for eating his mango. it was his fault for leaving it out in the first place, but that's beside the point.\" <br><br> The voices surrounding you begin to converge to a single point, and the light manifests into the rough outline of someone you think you've met before. \"anyways, he said the only way that i could be freed was by someone who truly knew me. obviously, not a lot of people come wandering into an ominous forest, so it's up to you to break the curse. i need you to find the four relics of my life that were scattered throughout the ominous forest and bring them back here as an offering to the ruined runes of runelius. good luck!\"<br><br>With the final words, the light around you shrinks back to a point, and you find yourself back at the ruined runes.<br><br>The way you came from appears to have been closed off by the trees, but four other paths seem to have opened up. One to each direction: <b>north, south, east, west</b>. Ominously enough, the same number of paths as there are relics. Something to think about." 
+            "crystal" : "You get closer to the crystal. As you take each step forward, it begins to spin faster and faster, glowing brighter and brighter. After being temporarily stunned by the light, you reopen your eyes to a glowing blue expanse, nothing as far as the eye can see. A voice speaks to you, the same as before, but now coming from all around you.<br><br>\"hey,\" it says \"glad someone finally found me. i'm sammy, the guy who's website you're on. a wizard trapped me here years ago for eating his mango. it was his fault for leaving it out in the first place, but that's beside the point.\" <br><br> The voices surrounding you begin to converge to a single point, and the light manifests into the rough outline of someone you think you've met before. \"anyways, he said the only way that i could be freed was by someone who truly knew me. obviously, not a lot of people come wandering into an ominous forest, so it's up to you to break the curse. i need you to find the four relics of my life that were scattered throughout the ominous forest and bring them back here as an offering to the ruined runes of runelius. good luck!\"<br><br>With the final words, the light around you shrinks back to a point, and you find yourself back at the ruined runes.<br><br>The way you came from appears to have been closed off by the trees, but four other paths seem to have opened up. One to each direction: <b>north, south, east, west</b>. Ominously enough, the same number of paths as there are relics. Something to think about." 
         }
     },
 
@@ -80,13 +78,13 @@ var rooms = {
         },
         "items" : {
             "keyboard" : {
-                "name" : "Keyboard of Legend",
+                "name" : "Keyboard of Legend (keyboard)",
                 "examination" : "A <b>relic</b> recieved from visiting the lab. Go back if you want to play some games!"
             }
 
         },
         "npcs" : {
-            "employee" : "\"HIYA!\" shouts the overly-enthusiastic employee. \"Welcome to the arcade! We have lots of games for you to play, just talk to the people by the cabinets. You can go also <b>back</b> to the entrance if you want to visit the experimentation wing, but we'll miss ya! Oh, and you can get the relic, the <b>Keyboard</b> of Legend, here from me too!",
+            "employee" : "\"HIYA THERE!\" shouts the overly-enthusiastic employee. \"Welcome to the arcade! We have lots of games for you to play, just talk to the people by the cabinets. You can go also <b>back</b> to the entrance if you want to visit the experimentation wing, but we'll miss ya! Oh, and you can get the relic, the <b>Keyboard</b> of Legend, here from me too!",
             "frog" : "You approach the frog. \"How's it going,\" he starts, \"the name's Claude. Despite my appearence, I'm actually a traveling musician. At least, I was, until my instruments were stolen. Come with me on a quest around the world to recover my stolen instruments in the demo for <a href=\"https://leafguy.itch.io/one-frog-band\" target=\"_blank\" rel=\"noopener noreferrer\">One Frog Band</a>, a game created by Sammy Levy, Max Cheng, Bryanna Hernandez, and Nick Novak! The game was made in Unity 2023 in a game design class, with a full Game Design Document alongside it.\"",
             "kid" : "\"Abra Kadabra!\" yells the kid as he turns around. \"At least, I think that's a spell. Anyways, <a href=\"https://slevy14.github.io/twine/youngwizards.html\" target=\"_blank\" rel=\"noopener noreferrer\">Young Wizards</a> is a game created by Sammy in the Twine engine that explores the experience of being a child on a playground. Short but sweet!\"",
             "snake" : "\"Howdy, pardner!\" the snake hisses as you approach, tipping her cowboy hat with her tail. \"I just finished a run of <a href=\"https://leafguy.itch.io/custom-snake-2019\" target=\"_blank\" rel=\"noopener noreferrer\">Custom Snake</a>, a game that Sammy created in high school for an AP Computer Science class. It's an implementation of the classic Snake as a roguelike. Score big, get upgrades, get bigger scores, get bigger upgrades, and so on! Check it out!\"",
@@ -108,15 +106,41 @@ var rooms = {
 
     // CABIN PATH
     "cabin" : {
-        "description" : "cabin under construction! go <b>back</b>",
+        "description" : "You venture to the east. Through a gap in the trees, you notice a log cabin with smoke coming out of its chimney. A lantern casts a faint glow on the front porch through the window. If you go <b>forward</b>, you can investigate this ominous structure. You can always turn around and go <b>back</b>",
         "directions"  : {
             "back"  : "rune-ruins",
+            "forward" : "cabin-porch"
         },
         "items" : {
 
         },
         "npcs" : {
             
+        }
+    },
+    "cabin-porch" : {
+        "description" : "A comforting voice invites you into the cabin. Stepping onto the porch, you see a rustic looking table set with two cups of tea. A lumberjack waves to you and gestures to a chair opposite him. You can go <b>to table</b>, or turn around and go <b>back</b>",
+        "directions"  : {
+            "back"  : "cabin",
+            "to table" : "table",
+        },
+        "items" : {
+
+        },
+        "npcs" : {
+            
+        }
+    },
+    "table" : {
+        "description" : "The lumberjack greets you with a warm smile. You take a sip of the tea, experiencing a flavor palette unfamiliar to you. \"It's a custom blend,\" he starts, \"Sammy found it recently at a <a href=\"https://www.racertea.com/\" target=\"_blank\" rel=\"noopener noreferrer\"local tea shop.</a> Tastes like a banana nut muffin. Wild.\" The <b>lumberjack</b> takes a sip of his tea.",
+        "directions"  : {
+            "back"  : "cabin-porch",
+        },
+        "items" : {
+
+        },
+        "npcs" : {
+            "lumberjack" : "You introduce yourself to the lumberjack. \"Oh, I know who you are. Another relic seeker. Yep, got one here too. I'm an old friend of Sammy's. In fact, I know everything about him.\" His gaze turns to a photo hanging on the wall of Sammy with some friends in middle school. \"Good times. Y'know, he used to wear that goofy hat all the time. Glad he finally came around on that one, he has much cooler hats now.\"<br><br>The lumberjack takes another sip of his tea, burning his mouth just a little bit. \"Well, let's start with what you probably already know. Sammy is a Computer Science major at Occidental College in LA. He's also minoring in Education and Math, and is interested in pursuing game design and/or CS education. If you want to learn more about his game design endeavors, you should head over to the lab when you're done here.\"",
         }
     },
 

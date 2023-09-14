@@ -1,13 +1,24 @@
 var currentRoom = "start";
+var roomsList = [];
+var runeRuins = "rune-ruins";
 var commands = ["go [direction]", "take [item]", "examine [item]", "talk to [character]", "inventory", "help", "look", "where"];
 var inventory = [];
+
+function generateRoomList() {
+    for (const [key, value] of Object.entries(rooms)) {
+        roomsList.push(key);
+    }
+    // for (var i = 0; i < roomsList.length; i++) {
+    //     $('#game-text').append("<li>" + roomsList[i] + "</li>");
+    // }
+}
 
 function changeRoom(dir) {
     if (rooms[currentRoom].directions[dir] !== undefined) {
         currentRoom = rooms[currentRoom].directions[dir];
         $('#game-text').append("<p>" + rooms[currentRoom].description + "</p>");
     } else {
-        $('#game-text').append("<p>You can't do that.</p>");
+        $('#game-text').append("<p>You can't do that from here.</p>");
     }
 
 }
@@ -80,12 +91,25 @@ function showInventory() {
     $('#game-text').append("</ul></p>");
 }
 
+function offerRelics() {
+    if (currentRoom === runeRuins && inventory.includes("keyboard") && inventory.includes("tome") && inventory.includes("mask") && inventory.includes("cube")) {
+        $('#game-text').append("<p>Congrats! You recovered all the relics! If you're reading this, it means the ending is still under construction. Come back later to check it out! How Ominous!</p>");
+    } else if (currentRoom !== runeRuins) {
+        $('#game-text').append("<p>You can't do that here!</p>");
+    } else {
+        $('#game-text').append("<p>You haven't collected all of the relics yet!</p>");
+    }
+}
+
 function playerInput(input) {
     $('#game-text').append("<p>> " + input + "</p>")
     var command = input.split(" ")[0];
     switch(command) {
         case "go":
             var dir = input.split(" ")[1];
+            if (dir === "to") {
+                dir = input.split(" ")[2];
+            }
             if (dir === undefined) {
                 $('#game-text').append("<p>Go where?</p>");
                 break;
@@ -95,6 +119,9 @@ function playerInput(input) {
         case "talk":
             if ((input.split(" ")[1] === "to")||(input.split(" ")[1] === "with")) {
                 var npc = input.split(" ")[2];
+                if (npc === "the") {
+                    npc = input.split(" ")[3];
+                }
                 if (npc === undefined) {
                     $('#game-text').append("<p>Talk to whom?</p>");
                     break;
@@ -132,13 +159,21 @@ function playerInput(input) {
         case "inventory":
             showInventory();
             break;
+        case "offer":
+            if (input.split(" ")[1] !== "relics") {
+                $('#game-text').append("<p>Did you mean \"offer relics\" ?</p>");
+            } else if (input.split(" ")[1] === "relics") {
+                offerRelics();
+            }
+            break;
         default:
-            $('#game-text').append("<p>Invalid Command</p>");
+            $('#game-text').append("<p>Invalid Command.</p>");
     }
 }
 
 $(document).ready(function(){
     showHelp();
+    generateRoomList();
     $('#game-text').append("<p>" + rooms.start.description + "</p>");
 
     $(document).keypress(function(key){
