@@ -187,9 +187,9 @@ var rooms = {
         }
     },
     "win-quiz" : {
-        "description" : "\"You know him so well! Fantastic Mr. Fox is a classic, and he's been crocheting for a few years now. He played a tiiiiny bit of piano as a kid, but other hobbies took precedence.\" The lumberjack reaches into his pocket and pulls out a Rubik's <b>Cube</b>. \"The next relic. <b>Take</b> it, you earned it! Don't leave without it, but there's a shortcut <b>through</b> this door that takes you back to the Ruined Runes.\" The lumberjack shakes your hand, and gives you an approving nod.",
+        "description" : "\"You know him so well! Fantastic Mr. Fox is a classic, and he's been crocheting for a few years now. He played a tiiiiny bit of piano as a kid, but other hobbies took precedence.\" The lumberjack reaches into his pocket and pulls out a Rubik's <b>Cube</b>. \"The next relic. <b>Take</b> it, you earned it! Don't leave without it, but there's a shortcut <b>through</b> this door that takes you back to the Rune Ruins.\" The lumberjack shakes your hand, and gives you an approving nod.",
         "directions"  : {
-            
+            "throguh" : "rune-ruins"
         },
         "items" : {
             "cube" : {
