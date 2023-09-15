@@ -92,7 +92,7 @@ function showInventory() {
 }
 
 function offerRelics() {
-    if (currentRoom === runeRuins && inventory.includes("keyboard") && inventory.includes("tome") && inventory.includes("mask") && inventory.includes("cube")) {
+    if (currentRoom === runeRuins && inventory.includes("keyboard") && inventory.includes("cube") && inventory.includes("pin") && inventory.includes("tome")) {
         $('#game-text').append("<p>Congrats! You recovered all the relics! If you're reading this, it means the ending is still under construction. Come back later to check it out! How Ominous!</p>");
     } else if (currentRoom !== runeRuins) {
         $('#game-text').append("<p>You can't do that here!</p>");

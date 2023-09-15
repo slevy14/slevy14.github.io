@@ -258,7 +258,7 @@ var rooms = {
         }
     },
     "itys" : {
-        "description" : "<a href=\"https://www.youtube.com/watch?v=k-u8g8_H6pM\" target=\"_blank\" rel=\"noopener noreferrer\">\"I Thought You Said\"</a>, written by Sammy Levy, performed in 2023 by 2 Paws Up Sketch Comedy! Click the link to watch!<br><br>You also see a \"pin\" on the ground with the theater's acorn-mask logo on it. You can <b>take</b> it, go <b>forward</b> through the exit back to the plaza, or go <b>back</b> to see another show.",
+        "description" : "<a href=\"https://www.youtube.com/watch?v=k-u8g8_H6pM\" target=\"_blank\" rel=\"noopener noreferrer\">\"I Thought You Said\"</a>, written by Sammy Levy, performed in 2023 by 2 Paws Up Sketch Comedy! Click the link to watch!<br><br>You also see a <b>pin</b> on the ground with the theater's acorn-mask logo on it. You can <b>take</b> it, go <b>forward</b> through the exit back to the plaza, or go <b>back</b> to see another show.",
         "directions"  : {
             "forward" : "woodland-theater",
             "back" : "lobby",
@@ -274,7 +274,7 @@ var rooms = {
         }
     },
     "lil" : {
-        "description" : "<a href=\"https://slevy14.github.io/lost_in_the_library.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">\"Lost in the Library\"</a>, written by Sammy Levy, performed (not filmed) in 2022 by 2 Paws Up Sketch Comedy! Click the link to read the script.<br><br>You also see a \"pin\" on the ground with the theater's acorn-mask logo on it. You can <b>take</b> it, go <b>forward</b> through the exit back to the plaza, or go <b>back</b> to see another show.",
+        "description" : "<a href=\"https://slevy14.github.io/lost_in_the_library.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">\"Lost in the Library\"</a>, written by Sammy Levy, performed (not filmed) in 2022 by 2 Paws Up Sketch Comedy! Click the link to read the script.<br><br>You also see a <b>pin</b> on the ground with the theater's acorn-mask logo on it. You can <b>take</b> it, go <b>forward</b> through the exit back to the plaza, or go <b>back</b> to see another show.",
         "directions"  : {
             "forward" : "woodland-theater",
             "back" : "lobby",
@@ -290,7 +290,7 @@ var rooms = {
         }
     },
     "snow" : {
-        "description" : "<a href=\"https://www.youtube.com/watch?v=Dl6sYwfsPhM\" target=\"_blank\" rel=\"noopener noreferrer\">\"Snow\"</a>, written by Sarah Williams, performed in 2023 by Sammy Levy with 2 Paws Up Sketch Comedy! Click the link to watch!<br><br>You also see a \"pin\" on the ground with the theater's acorn-mask logo on it. You can <b>take</b> it, go <b>forward</b> through the exit back to the plaza, or go <b>back</b> to see another show.",
+        "description" : "<a href=\"https://www.youtube.com/watch?v=Dl6sYwfsPhM\" target=\"_blank\" rel=\"noopener noreferrer\">\"Snow\"</a>, written by Sarah Williams, performed in 2023 by Sammy Levy with 2 Paws Up Sketch Comedy! Click the link to watch!<br><br>You also see a <b>pin</b> on the ground with the theater's acorn-mask logo on it. You can <b>take</b> it, go <b>forward</b> through the exit back to the plaza, or go <b>back</b> to see another show.",
         "directions"  : {
             "forward" : "woodland-theater",
             "back" : "lobby",
@@ -308,15 +308,45 @@ var rooms = {
 
     // BRIDGE PATH
     "bridge" : {
-        "description" : "bridge under construction! go <b>back</b>",
+        "description" : "To the west you hear the babbling of a brook. The dirt beneath your feet turns to mud, and soon turns into a constructed stone path as ground around it becomes submerged. The only way <b>forward</b> is across an ominously placed stone bridge. You can also always go <b>back</b>.",
         "directions"  : {
             "back" : "rune-ruins",
+            "forward" : "on-the-bridge"
         },
         "items" : {
 
         },
         "npcs" : {
             
+        }
+    },
+    "on-the-bridge" : {
+        "description" : "\"HALT!\" Cries a very professional voice as you reach the exact midpoint of the bridge. Confused, you look around to discover the source of the voice to have come from below the bridge. The bridge begins to shake, and, as you stabilize yourself, an eight-foot tall man with green skin in a suit and tie rises from the brook. \"As the Troll of Business, it is my duty to guard these woods from anyone unprofessional.\" He shudders at the word \'unprofessional\'. The <b>Troll</b> of Business appears to be waiting for you to initate a profesional conversation. You can also always go <b>back</b>.",
+        "directions"  : {
+            "back" : "rune-ruins",
+            "forward" : "across"
+        },
+        "items" : {
+            "tome" : {
+                "name" : "The Tome of Knowledge (tome)",
+                "examination" : "A <b>relic</b> recieved from visiting the Troll of Business. <a href=\"https://slevy14.github.io/Resume_Current.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">View Sammy's resume here</a>!"
+            }
+        },
+        "npcs" : {
+            "troll" : "You initate a professional conversation with the Troll of Business by telling him <i>a little bit about yourself</i>. \"A pleasure to make your acquaintance,\" the troll starts, \"I bet you're thinking \'oh, he's going to make me answer his riddles three, isn't he\'? Well, I will have you know that not all trolls have riddles. No, though we all have different requirements to cross our bridges. As the Troll of Business, mine is simply a professional conversation. You would be surprised to see how many have failed, and you don't want to know what happens to those who fail.\"<br><br>The Troll of Business clears his throat, straightens his back, and opens his briefcase. \"In here is a relic: The <b>Tome</b> of Knowledge, also known as Sammy's Resume. I am a busy troll; I have no time for nonsense. Look at it, take it, and continue <b>forward</b> across my bridge. Good day.\" The business troll tosses his briefcase to you before curling back up under the brdige. How he fits under there without wrinkling his shirt remains a mystery.<br><br><a href=\"https://slevy14.github.io/Resume_Current.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">View Sammy's resume here,</a> and don't forget to <b>take the tome</b> as well before you go <b>forward</b>."
+        }
+    },
+    "across" : {
+        "description" : "Though you've crossed the bridge, you've somehow ended up on the side you started. Going <b>forward</b> will take you to the Rune Ruins, but so will going <b>back</b>. How ominous!",
+        "directions"  : {
+            "back" : "rune-ruins",
+            "forward" : "rune-ruins"
+        },
+        "items" : {
+
+        },
+        "npcs" : {
+
         }
     },
 
