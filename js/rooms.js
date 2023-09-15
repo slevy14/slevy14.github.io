@@ -31,7 +31,7 @@ var rooms = {
         "description" : "You approach a clearing in the forest. At its center sits a ruined stone structure; at its heart is a <b>crystal</b> emmitting a shimmering blue halo and illuminating the four stone pillars that surround it. A voice enters your thoughts, suggesting that you <b>talk</b> to the <b>crystal</b>. How ominous.",
         "directions"  : {
             "north" : "laboratory",
-            "east" : "cabin",
+            "east"  : "cabin",
             "south" : "woodland-theater",
             "west"  : "bridge"
         },
@@ -47,7 +47,7 @@ var rooms = {
     "laboratory" : {
         "description" : "Following the path to the north, you come across a large building. It seems out of place in an ominous forest, but hey, that makes it more ominous. Through large windows you can see into the recently polished entryway, as well as a peek into some of the <i>projects</i> inside. The door is open, you could easily go <b>through</b>. You can always also go <b>back</b>, if you'd like.",
         "directions"  : {
-            "back"  : "rune-ruins",
+            "back"    : "rune-ruins",
             "through" : "lab-entrance"
         },
         "items" : {
@@ -62,7 +62,7 @@ var rooms = {
         "directions"  : {
             "left"  : "arcade",
             "right" : "experiments",
-            "back" : "laboratory"
+            "back"  : "laboratory"
         },
         "items" : {
 
@@ -108,7 +108,7 @@ var rooms = {
     "cabin" : {
         "description" : "You venture to the east. Through a gap in the trees, you notice a log cabin with smoke coming out of its chimney. A lantern casts a faint glow on the front porch through the window. If you go <b>forward</b>, you can investigate this ominous structure. You can always turn around and go <b>back</b>",
         "directions"  : {
-            "back"  : "rune-ruins",
+            "back"    : "rune-ruins",
             "forward" : "cabin-porch"
         },
         "items" : {
@@ -147,8 +147,8 @@ var rooms = {
     "couch" : {
         "description" : "\"Alright,\" the lumbejack says as he makes himself comfortable on the couch, \"here's how this is going to work. I'm going to give you 3 facts about Sammy, but one of them will be a lie. If you think you've spotted the lie, <b>go with</b> that answer. Ready? Which of these is a lie:<ul><li>He can solve a Rubik's <b>cube</b> in under a minute.</li><li>He drinks a lot of Mountain <b>Dew</b></li><li>He enjoys making logos and graphics in <b>Photoshop</b></li></ul> Remember to <b>go with</b> the <i>lie</i>\"",
         "directions"  : {
-            "dew" : "right-1",
-            "cube" : "wrong",
+            "dew"       : "right-1",
+            "cube"      : "wrong",
             "photoshop" : "wrong",
         },
         "items" : {
@@ -161,9 +161,9 @@ var rooms = {
     "right-1" : {
         "description" : "\"That's it! His record with the cube is about 38 seconds, and he's been working with photoshop for years. Mountain Dew, on the other hand, he finds unappealing.\" The lumberjack reaches for where a mug would be, but he realizes that he left it at the table and gives up. \"Next one:<ul><li>He's <b>rewatched</b> Parks and Rec many many times</li><li>He's a <b>cat</b> person</li><li>He's been doing <b>improv</b> for 10 years</li></ul> Remember to <b>go with</b> the <i>lie</i>\"",
         "directions"  : {
-            "cat" : "right-2",
+            "cat"       : "right-2",
             "rewatched" : "wrong",
-            "improv" : "wrong",
+            "improv"    : "wrong",
         },
         "items" : {
 
@@ -175,8 +175,8 @@ var rooms = {
     "right-2" : {
         "description" : "\"Right again! Parks and Rec has been a favorite since middle school, which is coincidentally around when he started doing improv too. He's actually a dog person, not a cat person.\" The lumberjack adjusts the pillow behind his back but is ultimately unable to find a comfortable position. He just sits there, slightly uncomfortable. \"Last one:<ul><li>His favorite <b>movie</b> is Fantastic Mr. Fox</li><li>He loves to <b>crochet</b></li><li>He plays <b>piano</b></li></ul> Remember to <b>go with</b> the <i>lie</i>\"",
         "directions"  : {
-            "piano" : "win-quiz",
-            "movie" : "wrong",
+            "piano"   : "win-quiz",
+            "movie"   : "wrong",
             "crochet" : "wrong",
         },
         "items" : {
@@ -189,7 +189,7 @@ var rooms = {
     "win-quiz" : {
         "description" : "\"You know him so well! Fantastic Mr. Fox is a classic, and he's been crocheting for a few years now. He played a tiiiiny bit of piano as a kid, but other hobbies took precedence.\" The lumberjack reaches into his pocket and pulls out a Rubik's <b>Cube</b>. \"The next relic. <b>Take</b> it, you earned it! Don't leave without it, but there's a shortcut <b>through</b> this door that takes you back to the Rune Ruins.\" The lumberjack shakes your hand, and gives you an approving nod.",
         "directions"  : {
-            "throguh" : "rune-ruins"
+            "through" : "rune-ruins"
         },
         "items" : {
             "cube" : {
@@ -205,7 +205,7 @@ var rooms = {
         "description" : "\"Oh, that one is actually true! Wanna give it another go?\" You can go <b>back</b> to try again.",
         "directions"  : {
             "couch" : "couch",
-            "back" : "couch",
+            "back"  : "couch",
         },
         "items" : {
 
@@ -217,9 +217,100 @@ var rooms = {
 
     // THEATER PATH
     "woodland-theater" : {
-        "description" : "woodland theater under construction! go <b>back</b>",
+        "description" : "You start down a winding path to the south. Enveloped in the sounds of nature, you meander along as raccoons, squirrels, mice, and bears scamper past you in the same direction. Soon, you stumble upon their destination: a cobblestone plaza, with a large fountain at its center. Wooland creatures converse on benches, stroll around the plaza, and share ice creams with one another. You watch as they trickle into a central building at the <b>west</b> side of the plaza, giggling and chattering excitedly as they enter. You can also go <b>back</b>.",
         "directions"  : {
-            "back"  : "rune-ruins",
+            "back" : "rune-ruins",
+            "west" : "theater-entrance"
+        },
+        "items" : {
+
+        },
+        "npcs" : {
+            
+        }
+    },
+    "theater-entrance" : {
+        "description" : "Comedy and tradgedy masks carved into large acorns hang above the door, informing you that this is the Woodland Theater. A board on the wall lists showtimes for movies such as \"Squirrels on a Plane\", \"Call Tree By Your Name\", and \"Forest Gump\". The <b>raccoon</b> at the ticketing booth calls for the next person in line. Hey, that's you! You can also turn around and go <b>back</b>.",
+        "directions"  : {
+            "back" : "woodland-theater",
+            "west" : "theater-entrance",
+            "through" : "lobby"
+        },
+        "items" : {
+
+        },
+        "npcs" : {
+            "raccoon" : "\"Hey, youse there! Can I help youse?\" The disgruntled raccoon with a poker visor clicks around on a computer from the inside of the ticketing booth. From the frantic clicks and rapid typing on the keyboard, it's clear that the raccoon doesn't know how to use a computer. He slams his fist on the enter key and turns back to you. \"Ya here to see a show? Boy, you're in luck! I'll tell ya -- Sammy's been involved in the theater world for a while. He's been doing improv for years, and has recently been writing performing sketch comedy. The showings here are from his personal projects, you can watch them all inside. And who knows, maybe you'll pick up a relic along the way.\"<br>The raccoon hits another button on his keyboard, printing a ticket and handing it to you. \"This'll getcha into any of the shows inside. Come back often to see what's new!\"<br><br>\"Oh, and anotha thing,\" the raccoon says before you can head inside, \"If youse see a scientist around these woods, youse tell him that I *did not* cheat at Catan last week, sometimes ya just roll a lot of fours!\"<br><br>Ticket in hand, you can now go <b>through</b> the main doors",
+        }
+    },
+    "lobby" : {
+        "description" : "A concessions stand in the lobby sells pinecones for your enjoyment during the shows, but despite the many squirrels lined up, they don't seem all that appealing. You can <b>go to</b> the show's in any of these theaters:<ul><li><b>1</b>:  \"I Thought You Said\" (Filmed Performance, Writer, 2023)</li><li><b>2</b>:  \"Lost in the Library\" (Script, Writer, 2022)</li><li><b>3</b>:  \"Snow\" (Filmed Performance, Actor, 2023)</li></ul>",
+        "directions"  : {
+            "1" : "itys",
+            "2" : "lil",
+            "3" : "snow",
+        },
+        "items" : {
+
+        },
+        "npcs" : {
+            
+        }
+    },
+    "itys" : {
+        "description" : "<a href=\"https://www.youtube.com/watch?v=k-u8g8_H6pM\" target=\"_blank\" rel=\"noopener noreferrer\">\"I Thought You Said\"</a>, written by Sammy Levy, performed in 2023 by 2 Paws Up Sketch Comedy! Click the link to watch!<br><br>You also see a \"pin\" on the ground with the theater's acorn-mask logo on it. You can <b>take</b> it, go <b>forward</b> through the exit back to the plaza, or go <b>back</b> to see another show.",
+        "directions"  : {
+            "forward" : "woodland-theater",
+            "back" : "lobby",
+        },
+        "items" : {
+            "pin" : {
+                "name" : "The Pin of Comedy and Tradgedy (pin)",
+                "examination" : "A <b>relic</b> recieved from visiting the theater. Go back if you want to watch some sketches!"
+            }
+        },
+        "npcs" : {
+            
+        }
+    },
+    "lil" : {
+        "description" : "<a href=\"https://slevy14.github.io/lost_in_the_library.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">\"Lost in the Library\"</a>, written by Sammy Levy, performed (not filmed) in 2022 by 2 Paws Up Sketch Comedy! Click the link to read the script.<br><br>You also see a \"pin\" on the ground with the theater's acorn-mask logo on it. You can <b>take</b> it, go <b>forward</b> through the exit back to the plaza, or go <b>back</b> to see another show.",
+        "directions"  : {
+            "forward" : "woodland-theater",
+            "back" : "lobby",
+        },
+        "items" : {
+            "pin" : {
+                "name" : "The Pin of Comedy and Tradgedy (pin)",
+                "examination" : "A <b>relic</b> recieved from visiting the theater. Go back if you want to watch some sketches!"
+            }
+        },
+        "npcs" : {
+            
+        }
+    },
+    "snow" : {
+        "description" : "<a href=\"https://www.youtube.com/watch?v=Dl6sYwfsPhM\" target=\"_blank\" rel=\"noopener noreferrer\">\"Snow\"</a>, written by Sarah Williams, performed in 2023 by Sammy Levy with 2 Paws Up Sketch Comedy! Click the link to watch!<br><br>You also see a \"pin\" on the ground with the theater's acorn-mask logo on it. You can <b>take</b> it, go <b>forward</b> through the exit back to the plaza, or go <b>back</b> to see another show.",
+        "directions"  : {
+            "forward" : "woodland-theater",
+            "back" : "lobby",
+        },
+        "items" : {
+            "pin" : {
+                "name" : "The Pin of Comedy and Tradgedy (pin)",
+                "examination" : "A <b>relic</b> recieved from visiting the theater. Go back if you want to watch some sketches!"
+            }
+        },
+        "npcs" : {
+            
+        }
+    },
+
+    // BRIDGE PATH
+    "bridge" : {
+        "description" : "bridge under construction! go <b>back</b>",
+        "directions"  : {
+            "back" : "rune-ruins",
         },
         "items" : {
 
@@ -229,11 +320,11 @@ var rooms = {
         }
     },
 
-    // BRIDGE PATH
-    "bridge" : {
-        "description" : "bridgeunder construction! go <b>back</b>",
+    // ENDING
+    "ending" : {
+        "description" : "bridge under construction! go <b>back</b>",
         "directions"  : {
-            "back"  : "rune-ruins",
+            "back" : "rune-ruins",
         },
         "items" : {
 
@@ -241,7 +332,7 @@ var rooms = {
         "npcs" : {
             
         }
-    }
+    },
 }
 
 
