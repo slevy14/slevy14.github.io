@@ -352,7 +352,7 @@ var rooms = {
 
     // ENDING
     "ending" : {
-        "description" : "bridge under construction! go <b>back</b>",
+        "description" : "Congrats! You recovered all the relics! If you're reading this, it means the ending is still under construction. Come back later to check it out! How Ominous!",
         "directions"  : {
             "back" : "rune-ruins",
         },

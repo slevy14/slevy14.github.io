@@ -2,7 +2,7 @@ var currentRoom = "start";
 var roomsList = [];
 var runeRuins = "rune-ruins";
 var commands = ["go [direction]", "take [item]", "examine [item]", "talk to [character]", "inventory", "help", "look", "where"];
-var inventory = [];
+var inventory = {};
 
 function generateRoomList() {
     for (const [key, value] of Object.entries(rooms)) {
@@ -33,19 +33,27 @@ function talkTo(npc) {
 
 function takeItem(item) {
     if (rooms[currentRoom].items[item] !== undefined) {
-        if (inventory.includes(item)) {
+        if (hasItem(item)) {
             $('#game-text').append("<p>You already have that item!</p>");
             return;
         }
-        inventory.push(rooms[currentRoom].items[item])
+        inventory[item] = rooms[currentRoom].items[item];
         $('#game-text').append("<p>You picked up the " + rooms[currentRoom].items[item].name + "</p>");
     } else {
         $('#game-text').append("<p>You can't do that.</p>");
     }
 }
 
+function DEBUG_GET_ALL_ITEMS() {
+    inventory["cube"] = rooms["win-quiz"].items["cube"];
+    inventory["keyboard"] = rooms["arcade"].items["keyboard"];
+    inventory["pin"] = rooms["itys"].items["pin"];
+    inventory["tome"] = rooms["on-the-bridge"].items["tome"];
+}
+
 function examineItem(item) {
-    if (inventory.includes(item)) {
+    // $('#game-text').append("<p>inventory contains  " + item + "? " + inventory.some(pickedUpItem => pickedUpItem.name == item) + "</p>");
+    if (hasItem(item)) {
         $('#game-text').append("<p>You examine the " + inventory[item].name + ". " + inventory[item].examination + "</p>");
     } else if (rooms[currentRoom].items[item] !== undefined) {
         $('#game-text').append("<p>You examine the " + rooms[currentRoom].items[item].name + ": " + rooms[currentRoom].items[item].examination + "</p>");
@@ -54,11 +62,24 @@ function examineItem(item) {
     }
 }
 
+function hasItem(item) {
+    for (const [key, value] of Object.entries(inventory)) {
+        if (key === item) {
+            return true;
+        }
+        console.log(key);
+    }
+    return false;
+}
+
 function showHelp() {
     $('#game-text').append("<p>Here are the possible commands: </p>");
     $('#game-text').append("<p><ul>");
     for (var i = 0; i < commands.length; i++) {
         $('#game-text').append("<li>" + commands[i] + "</li>");
+    }
+    if (currentRoom === runeRuins) {
+        $('#game-text').append("<li>" + "offer relics" + "</li>");
     }
     $('#game-text').append("</ul></p>");
 }
@@ -79,21 +100,22 @@ function listDirections() {
 }
 
 function showInventory() {
-    if (inventory.length === 0) {
+    if (Object.keys(inventory).length === 0) {
         $('#game-text').append("<p>You are not carrying anything</p>");
         return;
     }
     $('#game-text').append("<p>Here is your current inventory: </p>");
     $('#game-text').append("<p><ul>");
-    for (var i = 0; i < inventory.length; i++) {
-        $('#game-text').append("<li>" + inventory[i].name + "</li>");
+    for (const [key, value] of Object.entries(inventory)) {
+        $('#game-text').append("<li>" + inventory[key].name + "</li>");
     }
     $('#game-text').append("</ul></p>");
 }
 
 function offerRelics() {
-    if (currentRoom === runeRuins && inventory.includes("keyboard") && inventory.includes("cube") && inventory.includes("pin") && inventory.includes("tome")) {
-        $('#game-text').append("<p>Congrats! You recovered all the relics! If you're reading this, it means the ending is still under construction. Come back later to check it out! How Ominous!</p>");
+    if (currentRoom === runeRuins && hasItem("keyboard") && hasItem("cube") && hasItem("pin") && hasItem("tome")) {
+        currentRoom = "ending";
+        $('#game-text').append("<p>" + rooms[currentRoom].description + "</p>");
     } else if (currentRoom !== runeRuins) {
         $('#game-text').append("<p>You can't do that here!</p>");
     } else {
