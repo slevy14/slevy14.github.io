@@ -254,8 +254,8 @@ a.sidebar-nav-item:focus {
 .theme-base-01 .sidebar {
   background-color: #4e2763;
 }
-.theme-purple-dark .content a,
-.theme-purple-dark .related-posts li a:hover {
+.theme-base-01 .content a,
+.theme-base-01 .related-posts li a:hover {
   color: #4e2763;
 }
 
@@ -263,7 +263,7 @@ a.sidebar-nav-item:focus {
 .theme-base-02 .sidebar {
   background-color: #6b4181;
 }
-.theme-purple-light .content a,
-.theme-purple-light .related-posts li a:hover {
+.theme-base-02 .content a,
+.theme-base-02 .related-posts li a:hover {
   color: #6b4181;
 }
