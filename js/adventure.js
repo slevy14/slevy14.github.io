@@ -8,17 +8,33 @@ var timeout;
 
 
 var i = 0;
-var speed = 25;
-function simulateTyping(text, currentChar) {
-    var delay = Math.floor(Math.random()*(50-25+1)+25); // random between 50 and 250 milliseconds
+var speed = 10;
+function simulateTyping(text, currentChar = 0) {
+    // var delay = Math.floor(Math.random()*(50-25+1)+25); // random between 50 and 250 milliseconds
     currentChar = currentChar || 0;
 
     // append HTML blocks immediately
+    // <b> or <i> or <li> or <a> or <ul> jump to next one
+    // <p> or <br> just place
     if (text.charAt(currentChar) === '<') {
-        nextBracket = text.indexOf('<', currentChar+1);
-        closeBracket = text.indexOf('>', nextBracket);
+        closeBracket = text.indexOf('>', currentChar);
+        html_tag = text.substring(currentChar, closeBracket+1);
+        if (html_tag === "<ul>") {
+            closeBracket = text.indexOf('</ul>', currentChar) + 4;
+        }
+        else if (html_tag === "<b>" || html_tag === "<i>" || html_tag === "<li>" || html_tag === "<a>") {
+            nextBracket = text.indexOf('<', currentChar+1);
+            closeBracket = text.indexOf('>', nextBracket);
+        }
+        console.log("appending " + text.substring(currentChar, closeBracket+1));
         $('#game-text').append(text.substring(currentChar, closeBracket+1));
-        currentChar = closeBracket + 1;
+        currentChar = closeBracket+1;
+        if (text.charAt(currentChar) === "<") {  // handle edge case of two <br> tags
+            closeBracket = text.indexOf('>', currentChar);
+            $('#game-text').append(text.substring(currentChar, closeBracket+1));
+            currentChar = closeBracket+1;
+        }
+        console.log("currentChar is " + text.charAt(currentChar));
     }
 
     timeout = setTimeout(function() {
@@ -26,25 +42,8 @@ function simulateTyping(text, currentChar) {
         if(++currentChar < text.length) {
             simulateTyping(text, currentChar);
         }
-    }, delay);
+    }, speed);
 }
-
-// function typewriter(txt, start) {
-//     // $('#game-text').append(txt).style.color = 'blue';
-//     txt = String(txt);
-//     if (start) {
-//         $('#game-text').append("<p>");
-//     }
-//     if (i < txt.length) {
-//         console.log(txt.charAt(i));
-//         $('#game-text').append(txt.charAt(i));
-//         i++;
-//         setTimeout(typewriter(txt, false), speed);
-//     } else {
-//         $('#game-text').append("</p>");
-//         i = 0;
-//     }
-// }
 
 function generateRoomList() {
     for (const [key, value] of Object.entries(rooms)) {
@@ -58,7 +57,7 @@ function generateRoomList() {
 function changeRoom(dir) {
     if (rooms[currentRoom].directions[dir] !== undefined) {
         currentRoom = rooms[currentRoom].directions[dir];
-        $('#game-text').append("<p>" + rooms[currentRoom].description + "</p>");
+        simulateTyping("<p>" + rooms[currentRoom].description + "</p>");
     } else {
         $('#game-text').append("<p>You can't do that</p>");
     }
@@ -67,7 +66,7 @@ function changeRoom(dir) {
 
 function talkTo(npc) {
     if (rooms[currentRoom].npcs[npc] !== undefined) {
-        $('#game-text').append("<p>" + rooms[currentRoom].npcs[npc] + "</p>");
+        simulateTyping("<p>" + rooms[currentRoom].npcs[npc] + "</p>");
     } else {
         $('#game-text').append("<p>You can't do that.</p>");
     }
@@ -80,7 +79,7 @@ function takeItem(item) {
             return;
         }
         inventory[item] = rooms[currentRoom].items[item];
-        $('#game-text').append("<p>You picked up the " + rooms[currentRoom].items[item].name + "</p>");
+        simulateTyping("<p>You picked up the " + rooms[currentRoom].items[item].name + "</p>");
     } else {
         $('#game-text').append("<p>You can't do that.</p>");
     }
@@ -96,9 +95,9 @@ function DEBUG_GET_ALL_ITEMS() {
 function examineItem(item) {
     // $('#game-text').append("<p>inventory contains  " + item + "? " + inventory.some(pickedUpItem => pickedUpItem.name == item) + "</p>");
     if (hasItem(item)) {
-        $('#game-text').append("<p>You examine the " + inventory[item].name + ". " + inventory[item].examination + "</p>");
+        simulateTyping("<p>You examine the " + inventory[item].name + ". " + inventory[item].examination + "</p>");
     } else if (rooms[currentRoom].items[item] !== undefined) {
-        $('#game-text').append("<p>You examine the " + rooms[currentRoom].items[item].name + ": " + rooms[currentRoom].items[item].examination + "</p>");
+        simulateTyping("<p>You examine the " + rooms[currentRoom].items[item].name + ": " + rooms[currentRoom].items[item].examination + "</p>");
     } else {
         $('#game-text').append("<p>You can't do that.</p>");
     }
@@ -157,7 +156,7 @@ function showInventory() {
 function offerRelics() {
     if (currentRoom === runeRuins && hasItem("keyboard") && hasItem("cube") && hasItem("pin") && hasItem("tome")) {
         currentRoom = "ending";
-        $('#game-text').append("<p>" + rooms[currentRoom].description + "</p>");
+        simulateTyping("<p>" + rooms[currentRoom].description + "</p>");
     } else if (currentRoom !== runeRuins) {
         $('#game-text').append("<p>You can't do that here!</p>");
     } else {
@@ -213,7 +212,7 @@ function playerInput(input) {
             examineItem(item);
             break;
         case "look":
-            $('#game-text').append("<p>" + rooms[currentRoom].description + "</p>");
+            simulateTyping("<p>" + rooms[currentRoom].description + "</p>");
             break;
         case "help":
             showHelp();
@@ -241,7 +240,7 @@ $(document).ready(function(){
     generateRoomList();
     // typewriter(rooms.start.description, true);
     simulateTyping(rooms.start.description, 0);
-    // $('#game-text').append("<p>" + rooms.start.description + "</p>");
+    // simulateTyping("<p>" + rooms.start.description + "</p>");
 
     $(document).keypress(function(key){
         if (key.which === 13 && $('#user-input').is(":focus")) {  // ENTER is pressed
