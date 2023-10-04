@@ -1,7 +1,7 @@
 var rooms = {
     // START PATH
     "start" : {
-        "description" : "You awake in an ominous forest. Just like, ominous vibes. NOT chill. You're surrounded by trees on all sides, except for dark path <b>forward</b>.",
+        "description" : "You awake in an ominous forest. Just like, ominous vibes. NOT chill. You're surrounded by trees on all sides, except for a dark path <b>forward</b>.",
         "directions"  : {
             "forward" : "dark-path",    
         },

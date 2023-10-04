@@ -4,6 +4,48 @@ var runeRuins = "rune-ruins";
 var commands = ["go [direction]", "take [item]", "examine [item]", "talk to [character]", "inventory", "help", "look", "where"];
 var inventory = {};
 
+var timeout;
+
+
+var i = 0;
+var speed = 25;
+function simulateTyping(text, currentChar) {
+    var delay = Math.floor(Math.random()*(50-25+1)+25); // random between 50 and 250 milliseconds
+    currentChar = currentChar || 0;
+
+    // append HTML blocks immediately
+    if (text.charAt(currentChar) === '<') {
+        nextBracket = text.indexOf('<', currentChar+1);
+        closeBracket = text.indexOf('>', nextBracket);
+        $('#game-text').append(text.substring(currentChar, closeBracket+1));
+        currentChar = closeBracket + 1;
+    }
+
+    timeout = setTimeout(function() {
+        $('#game-text').append(text.charAt(currentChar));
+        if(++currentChar < text.length) {
+            simulateTyping(text, currentChar);
+        }
+    }, delay);
+}
+
+// function typewriter(txt, start) {
+//     // $('#game-text').append(txt).style.color = 'blue';
+//     txt = String(txt);
+//     if (start) {
+//         $('#game-text').append("<p>");
+//     }
+//     if (i < txt.length) {
+//         console.log(txt.charAt(i));
+//         $('#game-text').append(txt.charAt(i));
+//         i++;
+//         setTimeout(typewriter(txt, false), speed);
+//     } else {
+//         $('#game-text').append("</p>");
+//         i = 0;
+//     }
+// }
+
 function generateRoomList() {
     for (const [key, value] of Object.entries(rooms)) {
         roomsList.push(key);
@@ -124,6 +166,7 @@ function offerRelics() {
 }
 
 function playerInput(input) {
+    clearTimeout(this.timeout);
     $('#game-text').append("<p>> " + input + "</p>")
     var command = input.split(" ")[0];
     switch(command) {
@@ -196,7 +239,9 @@ function playerInput(input) {
 $(document).ready(function(){
     showHelp();
     generateRoomList();
-    $('#game-text').append("<p>" + rooms.start.description + "</p>");
+    // typewriter(rooms.start.description, true);
+    simulateTyping(rooms.start.description, 0);
+    // $('#game-text').append("<p>" + rooms.start.description + "</p>");
 
     $(document).keypress(function(key){
         if (key.which === 13 && $('#user-input').is(":focus")) {  // ENTER is pressed
