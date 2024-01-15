@@ -2,7 +2,18 @@
 layout: page
 title: Projects
 ---
-  
+
+-------------
+
+## Games  
+
+-------------   
+
+#### [Adventure through the Omnious Forest](https://slevy14.github.io/adventure-time.html)
+*Javascript, JQuery. &nbsp; 2023*  
+
+Explore this very website as a text-based adventure! Try to escape the Ominous Forest, and learn a little bit about the guy who made it along the way!
+
 -------------   
 
 #### [One Frog Band](https://leafguy.itch.io/one-frog-band)
@@ -60,9 +71,27 @@ My Interpretation of the classic "Snake" as a roguelike. <a href="https://leafgu
 -------------  
 
 #### Young Wizards
-*HTML, Twine &nbsp; 2021*  
+*HTML, Twine. &nbsp; 2021*  
 
 A text-based hyperlink adventure game I made in Twine, based on childhood playground experiences. <a href="/twine/youngwizards.html" target="_blank" rel="noopener noreferrer">Playable Here!</a>
+
+-------------
+
+## Misc
+
+-------------  
+
+#### Pokemon Type Classifier
+*Python. &nbsp; 2023*  
+
+A machine learning demo that attempts to identify the pokemon typing of a given image. <a href="https://slevy14.github.io/poke-classifier.html" target="_blank" rel="noopener noreferrer">Try it out here!</a>
+
+-------------  
+
+#### The Infinite Slide
+*Javascript. &nbsp; 2024*  
+
+(Work in progress) Have you ever listened to the cha-cha slide and thought to yourself: "I wish this would never end"? Now it doesn't! <a href="https://slevy14.github.io/infinite-slide.html" target="_blank" rel="noopener noreferrer">Try it out here!</a>
 
 -------------
 
@@ -73,9 +102,13 @@ A text-based hyperlink adventure game I made in Twine, based on childhood playgr
 I also write and perform sketch comedy! These are some sketches that I have written and performed in.
 
 #### Writing   
-[I Thought You Said](https://www.youtube.com/watch?v=k-u8g8_H6pM) &nbsp;*Filmed Performance, 2023*   
+[Time Out](https://youtu.be/0ETwGiMK7rw?si=NXU1_vPpgpvSmCuI) &nbsp;*Filmed, 2023*
+[Dice](https://youtu.be/Ltkn_QcHhcU?si=nLYdXixICMUgNxsA) &nbsp;*Filmed, 2023*
+[Personality Quiz](/personality_quiz.pdf) &nbsp;*Script, 2023*
+[I Thought You Said](https://www.youtube.com/watch?v=k-u8g8_H6pM) &nbsp;*Filmed, 2023*   
 [Lost in the Library](/lost_in_the_library.pdf) &nbsp;*Script, 2022*      
 #### Acting   
-[Snow](https://www.youtube.com/watch?v=Dl6sYwfsPhM) &nbsp;*Filmed Performance, 2023*   
+[The Chosen One](https://youtu.be/c6TuHQY8ZV4?si=My9CteALEz80Cm1e) &nbsp;*Filmed, 2023*
+[Snow](https://www.youtube.com/watch?v=Dl6sYwfsPhM) &nbsp;*Filmed, 2023*   
 
 
