@@ -53,6 +53,7 @@ audio.playlist = [
 ];
  
 function playAudio(playlistId){
+    var playlistId = playlistId;
     // If SoundManager object exists, get rid of it...
     if (audio.nowPlaying){
         audio.nowPlaying.destruct();
