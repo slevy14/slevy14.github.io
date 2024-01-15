@@ -52,14 +52,10 @@ audio.playlist = [
     "/audio/cha_cha_slide_clips/yeah_do_that_stuff.mp3",
 ];
  
-function playAudio(){
+function playAudio(playlistId){
     // If SoundManager object exists, get rid of it...
     if (audio.nowPlaying){
         audio.nowPlaying.destruct();
-        // ...and reset array key if end reached
-        if(playlistId == audio.playlist.length){
-            playlistId = 0;
-        }
     }
     // Standard Sound Manager play sound function...
     soundManager.onready(function() {
@@ -85,5 +81,5 @@ function pickNextAudio() {
 // Start
 var playButton = document.getElementById('is-button')
 playButton.addEventListener('click', function(){
-    playAudio();
+    playAudio(pickNextAudio());
 });
