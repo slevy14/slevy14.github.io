@@ -14,7 +14,7 @@ title: Resume
 
 ### Technical Skills  
 
-C\#, &nbsp;Unity, &nbsp;C, &nbsp;C\+\+, &nbsp;Java, &nbsp;Python, &nbsp;MIPS Assembly, &nbsp;Git, &nbsp;HTML, &nbsp;CSS, &nbsp;Photoshop  
+C\#, &nbsp;Unity, &nbsp;C, &nbsp;C\+\+, &nbsp;Java, &nbsp;Python, &nbsp;Git, &nbsp;HTML, &nbsp;CSS, &nbsp;Photoshop  
 
 -------------  
 
@@ -31,7 +31,7 @@ C\#, &nbsp;Unity, &nbsp;C, &nbsp;C\+\+, &nbsp;Java, &nbsp;Python, &nbsp;MIPS Ass
 ### Leadership  
 
 **Stage Manager** &nbsp; Chadwick School & Occidental College    *2015 - 2021*  
-**Treasurer** &nbsp; Fantastiprov Improv Troupe &nbsp; *Present*  
+**President** &nbsp; Fantastiprov Improv Troupe &nbsp; *Present*  
 **Vice President** &nbsp; 2 Paws Up Sketch Comedy Club &nbsp; *Present*
 
 -------------  
