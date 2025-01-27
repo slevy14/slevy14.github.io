@@ -208,6 +208,9 @@ function playerInput(input) {
             break;
         case "examine":
             var item = input.split(" ")[1];
+            if (item === "the") {
+                item = input.split(" ")[2];
+            }
             if (item === undefined) {
                 $('#game-text').append("<p>Examine what?</p>");
                 break;
