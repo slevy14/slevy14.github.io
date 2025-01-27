@@ -1,11 +1,20 @@
 ---
 layout: page
-title: Projects
+title: Code Projects
 ---
 
 -------------
 
 ## Games  
+
+-------------   
+
+#### [Magicode](https://github.com/slevy14/Comps-Game)
+*C#, Unity. &nbsp; 2024*  
+
+An educational autobattler. Learn programming fundamentals through a drag-and-drop coding language while you battle your way through a fantastical world! This is my Senior Comprehensive project for Occidental College, and you can see the [research paper that I wrote about it here](https://github.com/slevy14/Comps-Game).
+
+<iframe frameborder="0" src="https://itch.io/embed/3145310?linkback=true&amp;bg_color=FDF1D2&amp;fg_color=743f39&amp;link_color=6b9a07&amp;border_color=8e7b5b" width="552" height="167"><a href="https://leafguy.itch.io/magicode">Magicode by leafguy</a></iframe>
 
 -------------   
 
@@ -19,54 +28,31 @@ Explore this very website as a text-based adventure! Try to escape the Ominous F
 #### [One Frog Band](https://leafguy.itch.io/one-frog-band)
 *C#, Unity. &nbsp; 2023*  
 
-A momentum-based action platformer game. Developed in Unity!
-<details>
-	<summary>learn more!</summary>
+A momentum-based action platformer game. Play as Claude, a musical frog, as he platforms through a variety of levels to recover his stolen instruments. Created in a Game Design class with some friends. Play the demo here!
 
-	Play as Claude, a musical frog, as he platforms through a variety of levels to recover his stolen instruments. Created in a Game Design class with some friends. Play the demo here!
-	<iframe src="https://itch.io/embed/2057483" width="552" height="167" frameborder="0"><a href="https://leafguy.itch.io/one-frog-band">One Frog Band by leafguy</a></iframe>
-
-</details>
+<iframe src="https://itch.io/embed/2057483" width="552" height="167" frameborder="0"><a href="https://leafguy.itch.io/one-frog-band">One Frog Band by leafguy</a></iframe>
 
 -------------   
 
 #### [MAC 250 AR Experience](https://github.com/slevy14/mac250-ar-experience)
 *C#, Unity. &nbsp; 2021*  
 
-A location-based, augmented reality mobile app developed in Unity.
-<details>
-	<summary>learn more!</summary>
-
-	Created as a semester long project in collaboration with a media arts class (who designed the art assets), the goal was to create an AR application to showcase their final work. Check out some screenshots and gifs <a href="https://slevy14.github.io/mac250-screenshots.html">here.</a>
-
-</details>
+A location-based, augmented reality mobile app developed in Unity. Created as a semester long project in collaboration with a media arts class (who designed the art assets), the goal was to create an AR application to showcase their final work. Check out some screenshots and gifs <a href="https://slevy14.github.io/mac250-screenshots.html">here.</a>
 
 -------------  
 
-#### Inn-Conspicuous
+#### <a href="/Inn_Conspicuous_GDD.pdf">Inn-Conspicuous</a>
 *Document. &nbsp; 2019*
 
-A Game Design Document for a planned, cryptid-themed MMORPG.
-<details>
-	<summary>learn more!</summary>
-
-	This was a project for an Intro to Software Engineering class during my senior year of high school. While the game never left the early stages of development, I led the creation of a game design document to organize, plan, and design what we wanted the game to look like. You can check out the (somewhat completed) GDD <a href="/Inn_Conspicuous_GDD.pdf">here.</a>
-
-</details>
+A Game Design Document for a planned, cryptid-themed MMORPG. This was a project for an Intro to Software Engineering class during my senior year of high school. While the game never left the early stages of development, I led the creation of a game design document to organize, plan, and design what we wanted the game to look like. You can check out the (somewhat completed) GDD <a href="/Inn_Conspicuous_GDD.pdf">here.</a>
 
 -------------  
 
 #### [Custom Snake](https://github.com/slevy14/custom-snake-2019)
 *C#, Unity. &nbsp; 2019*
 
-My Interpretation of the classic "Snake" as a roguelike. <a href="https://leafguy.itch.io/custom-snake-2019" target="_blank" rel="noopener noreferrer">Playable Here!</a>
-<details>
-	<summary>learn more!</summary>
-
-	Start from nothing, and unlock powerups, gameplay mechanics, and visual features! Check out some screenshots and gifs <a href="https://slevy14.github.io/custom-snake-screenshots.html">here.</a>
-	<iframe frameborder="0" src="https://itch.io/embed/1882665?linkback=true&amp;border_width=2&amp;link_color=aa759f" width="554" height="169"><a href="https://leafguy.itch.io/custom-snake-2019">Custom Snake (2019) by leafguy</a></iframe>
-
-</details>
+My Interpretation of the classic "Snake" as a roguelike. Start from nothing, and unlock powerups, gameplay mechanics, and visual features! Check out some screenshots and gifs <a href="https://slevy14.github.io/custom-snake-screenshots.html">here.</a>
+<iframe frameborder="0" src="https://itch.io/embed/1882665?linkback=true&amp;border_width=2&amp;link_color=aa759f" width="554" height="169"><a href="https://leafguy.itch.io/custom-snake-2019">Custom Snake (2019) by leafguy</a></iframe>
 
 -------------  
 
@@ -92,23 +78,5 @@ A machine learning demo that attempts to identify the pokemon typing of a given 
 *Javascript. &nbsp; 2024*  
 
 (Work in progress) Have you ever listened to the cha-cha slide and thought to yourself: "I wish this would never end"? Now it doesn't! <a href="https://slevy14.github.io/infinite-slide.html" target="_blank" rel="noopener noreferrer">Try it out here!</a>
-
--------------
-
-## Writing
-
--------------
-
-I also write and perform sketch comedy! These are some sketches that I have written and performed in.
-
-#### Writing   
-[Time Out](https://youtu.be/0ETwGiMK7rw?si=NXU1_vPpgpvSmCuI) &nbsp;*Filmed, 2023*   
-[Dice](https://youtu.be/Ltkn_QcHhcU?si=nLYdXixICMUgNxsA) &nbsp;*Filmed, 2023*   
-[Personality Quiz](/personality_quiz.pdf) &nbsp;*Script, 2023*   
-[I Thought You Said](https://www.youtube.com/watch?v=k-u8g8_H6pM) &nbsp;*Filmed, 2023*   
-[Lost in the Library](/lost_in_the_library.pdf) &nbsp;*Script, 2022*      
-#### Acting   
-[The Chosen One](https://youtu.be/c6TuHQY8ZV4?si=My9CteALEz80Cm1e) &nbsp;*Filmed, 2023*     
-[Snow](https://www.youtube.com/watch?v=Dl6sYwfsPhM) &nbsp;*Filmed, 2023*   
 
 
