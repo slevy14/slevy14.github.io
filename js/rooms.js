@@ -78,7 +78,7 @@ var rooms = {
         },
         "items" : {
             "keyboard" : {
-                "name" : "Keyboard of Legend (keyboard)",
+                "name" : "The Keyboard of Legend (keyboard)",
                 "examination" : "A <b>relic</b> recieved from visiting the lab. Go back if you want to play some games!"
             }
 

@@ -197,6 +197,9 @@ function playerInput(input) {
             break;
         case "take":
             var item = input.split(" ")[1];
+            if (item === "the") {
+                item = input.split(" ")[2];
+            }
             if (item === undefined) {
                 $('#game-text').append("<p>Take what?</p>");
                 break;
