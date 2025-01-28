@@ -32,7 +32,7 @@ C\#, &nbsp;Unity, &nbsp;Python, &nbsp;C, &nbsp;C\+\+, &nbsp;Java, &nbsp;Git, &nb
 
 **Stage Manager** &nbsp; Chadwick School & Occidental College &nbsp; *2015 - 2021*  
 **President** &nbsp; Fantastiprov Improv Troupe &nbsp; *Present*  
-**Vice President** &nbsp; 2 Paws Up Sketch Comedy Club &nbsp; *Present*
+**President** &nbsp; 2 Paws Up Sketch Comedy Club &nbsp; *Present*
 
 -------------  
 
