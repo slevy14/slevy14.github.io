@@ -85,10 +85,10 @@ var rooms = {
         },
         "npcs" : {
             "employee" : "\"HIYA THERE!\" shouts the overly-enthusiastic employee. \"Welcome to the arcade! We have lots of games for you to play, just talk to the people by the cabinets. You can go also <b>back</b> to the entrance if you want to visit the experimentation wing, but we'll miss ya! Oh, and you can get the relic, the <b>Keyboard</b> of Legend, here from me too!",
-            "frog" : "You approach the frog. \"How's it going,\" he starts, \"the name's Claude. Despite my appearence, I'm actually a traveling musician. At least, I was, until my instruments were stolen. Come with me on a quest around the world to recover my stolen instruments in the demo for <a href=\"https://leafguy.itch.io/one-frog-band\" target=\"_blank\" rel=\"noopener noreferrer\">One Frog Band</a>, a game created by Sammy Levy, Max Cheng, Bryanna Hernandez, and Nick Novak! The game was made in Unity 2023 in a game design class, with a full Game Design Document alongside it.\"",
-            "kid" : "\"Abra Kadabra!\" yells the kid as he turns around. \"At least, I think that's a spell. Anyways, <a href=\"https://slevy14.github.io/twine/youngwizards.html\" target=\"_blank\" rel=\"noopener noreferrer\">Young Wizards</a> is a game created by Sammy in the Twine engine that explores the experience of being a child on a playground. Short but sweet!\"",
-            "snake" : "\"Howdy, pardner!\" the snake hisses as you approach, tipping her cowboy hat with her tail. \"I just finished a run of <a href=\"https://leafguy.itch.io/custom-snake-2019\" target=\"_blank\" rel=\"noopener noreferrer\">Custom Snake</a>, a game that Sammy created in high school for an AP Computer Science class. It's an implementation of the classic Snake as a roguelike. Score big, get upgrades, get bigger scores, get bigger upgrades, and so on! Check it out!\"",
-            "bigfoot" : "Yep, that's bigfoot. He approaches you with a stack of papers. \"Sorry, machine's out of order. <a href=\"https://slevy14.github.io/Inn_Conspicuous_GDD.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Inn Conspicuous</a> is an MMO created by Sammy and some friends in a software engineering course. While the game was never built beyond very early prototypes, the Game Design Document was largely completed. Give it a read if you want some behind-the-scenes info!",
+            "frog" : "You approach the frog. \"How's it going,\" he starts, \"the name's Claude. Despite my appearence, I'm actually a traveling musician. At least, I was, until my instruments were stolen. Come with me on a quest around the world to recover my stolen instruments in the demo for <span><a href=\"https://leafguy.itch.io/one-frog-band\" target=\"_blank\" rel=\"noopener noreferrer\">One Frog Band</a></span>, a game created by Sammy Levy, Max Cheng, Bryanna Hernandez, and Nick Novak! The game was made in Unity 2023 in a game design class, with a full Game Design Document alongside it.\"",
+            "kid" : "\"Abra Kadabra!\" yells the kid as he turns around. \"At least, I think that's a spell. Anyways, <span><a href=\"https://slevy14.github.io/twine/youngwizards.html\" target=\"_blank\" rel=\"noopener noreferrer\">Young Wizards</a></span> is a game created by Sammy in the Twine engine that explores the experience of being a child on a playground. Short but sweet!\"",
+            "snake" : "\"Howdy, pardner!\" the snake hisses as you approach, tipping her cowboy hat with her tail. \"I just finished a run of <span><a href=\"https://leafguy.itch.io/custom-snake-2019\" target=\"_blank\" rel=\"noopener noreferrer\">Custom Snake</a></span>, a game that Sammy created in high school for an AP Computer Science class. It's an implementation of the classic Snake as a roguelike. Score big, get upgrades, get bigger scores, get bigger upgrades, and so on! Check it out!\"",
+            "bigfoot" : "Yep, that's bigfoot. He approaches you with a stack of papers. \"Sorry, machine's out of order. <span><a href=\"https://slevy14.github.io/Inn_Conspicuous_GDD.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Inn Conspicuous</a></span> is an MMO created by Sammy and some friends in a software engineering course. While the game was never built beyond very early prototypes, the Game Design Document was largely completed. Give it a read if you want some behind-the-scenes info!",
         }
     },
     "experiments" : {
@@ -100,7 +100,7 @@ var rooms = {
 
         },
         "npcs" : {
-            "gnome" : "\"Ohoho, welcome to the experimentation wing!\" exclaims the gnome, excitedly shaking both of your hands at the same time. \"Sammy's big project here was the <a href=\"https://slevy14.github.io/mac250-screenshots.html\" target=\"_blank\" rel =\"noopener noreferrer\">MAC 250 AR Experience</a>, a mobile app built in unity that used Augmented Reality and Map Data to showcase digital art installations around his college campus. Click on the link for screenshots!\" The gnome scampers away, finding another button to press, causing another explosion.",
+            "gnome" : "\"Ohoho, welcome to the experimentation wing!\" exclaims the gnome, excitedly shaking both of your hands at the same time. \"Sammy's big project here was the <span><a href=\"https://slevy14.github.io/mac250-screenshots.html\" target=\"_blank\" rel =\"noopener noreferrer\">MAC 250 AR Experience</a></span>, a mobile app built in unity that used Augmented Reality and Map Data to showcase digital art installations around his college campus. Click on the link for screenshots!\" The gnome scampers away, finding another button to press, causing another explosion.",
         }
     },
 
@@ -132,7 +132,7 @@ var rooms = {
         }
     },
     "table" : {
-        "description" : "The lumberjack greets you with a warm smile. You take a sip of the tea, experiencing a flavor palette unfamiliar to you. \"It's a custom blend,\" he starts, \"Sammy found it recently at a <a href=\"https://www.racertea.com/\" target=\"_blank\" rel=\"noopener noreferrer\">local tea shop.</a> Tastes like a banana nut muffin. Wild.\" The <b>lumberjack</b> takes a sip of his tea.",
+        "description" : "The lumberjack greets you with a warm smile. You take a sip of the tea, experiencing a flavor palette unfamiliar to you. \"It's a custom blend,\" he starts, \"Sammy found it recently at a <span><a href=\"https://www.racertea.com/\" target=\"_blank\" rel=\"noopener noreferrer\">local tea shop.</a></span> Tastes like a banana nut muffin. Wild.\" The <b>lumberjack</b> takes a sip of his tea.",
         "directions"  : {
             "back"  : "cabin-porch",
             "couch" : "couch"
@@ -258,7 +258,7 @@ var rooms = {
         }
     },
     "itys" : {
-        "description" : "<a href=\"https://www.youtube.com/watch?v=k-u8g8_H6pM\" target=\"_blank\" rel=\"noopener noreferrer\">\"I Thought You Said\"</a>, written by Sammy Levy, performed in 2023 by 2 Paws Up Sketch Comedy! Click the link to watch!<br><br>You also see a <b>pin</b> on the ground with the theater's acorn-mask logo on it. You can <b>take</b> it, go <b>forward</b> through the exit back to the plaza, or go <b>back</b> to see another show.",
+        "description" : "<span><a href=\"https://www.youtube.com/watch?v=k-u8g8_H6pM\" target=\"_blank\" rel=\"noopener noreferrer\">\"I Thought You Said\"</a></span>, written by Sammy Levy, performed in 2023 by 2 Paws Up Sketch Comedy! Click the link to watch!<br><br>You also see a <b>pin</b> on the ground with the theater's acorn-mask logo on it. You can <b>take</b> it, go <b>forward</b> through the exit back to the plaza, or go <b>back</b> to see another show.",
         "directions"  : {
             "forward" : "woodland-theater",
             "back" : "lobby",
@@ -274,7 +274,7 @@ var rooms = {
         }
     },
     "lil" : {
-        "description" : "<a href=\"https://slevy14.github.io/lost_in_the_library.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">\"Lost in the Library\"</a>, written by Sammy Levy, performed (not filmed) in 2022 by 2 Paws Up Sketch Comedy! Click the link to read the script.<br><br>You also see a <b>pin</b> on the ground with the theater's acorn-mask logo on it. You can <b>take</b> it, go <b>forward</b> through the exit back to the plaza, or go <b>back</b> to see another show.",
+        "description" : "<span><a href=\"https://slevy14.github.io/lost_in_the_library.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">\"Lost in the Library\"</a></span>, written by Sammy Levy, performed (not filmed) in 2022 by 2 Paws Up Sketch Comedy! Click the link to read the script.<br><br>You also see a <b>pin</b> on the ground with the theater's acorn-mask logo on it. You can <b>take</b> it, go <b>forward</b> through the exit back to the plaza, or go <b>back</b> to see another show.",
         "directions"  : {
             "forward" : "woodland-theater",
             "back" : "lobby",
@@ -290,7 +290,7 @@ var rooms = {
         }
     },
     "snow" : {
-        "description" : "<a href=\"https://www.youtube.com/watch?v=Dl6sYwfsPhM\" target=\"_blank\" rel=\"noopener noreferrer\">\"Snow\"</a>, written by Sarah Williams, performed in 2023 by Sammy Levy with 2 Paws Up Sketch Comedy! Click the link to watch!<br><br>You also see a <b>pin</b> on the ground with the theater's acorn-mask logo on it. You can <b>take</b> it, go <b>forward</b> through the exit back to the plaza, or go <b>back</b> to see another show.",
+        "description" : "<span><a href=\"https://www.youtube.com/watch?v=Dl6sYwfsPhM\" target=\"_blank\" rel=\"noopener noreferrer\">\"Snow\"</a></span>, written by Sarah Williams, performed in 2023 by Sammy Levy with 2 Paws Up Sketch Comedy! Click the link to watch!<br><br>You also see a <b>pin</b> on the ground with the theater's acorn-mask logo on it. You can <b>take</b> it, go <b>forward</b> through the exit back to the plaza, or go <b>back</b> to see another show.",
         "directions"  : {
             "forward" : "woodland-theater",
             "back" : "lobby",
@@ -329,7 +329,7 @@ var rooms = {
         "items" : {
             "tome" : {
                 "name" : "The Tome of Knowledge (tome)",
-                "examination" : "A <b>relic</b> recieved from visiting the Troll of Business. You can <a href=\"https://slevy14.github.io/Resume_Current.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">ciew Sammy's resume here</a>!"
+                "examination" : "A <b>relic</b> recieved from visiting the Troll of Business. You can <span><a href=\"https://slevy14.github.io/Resume_Current.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">ciew Sammy's resume here</a></span>!"
             }
         },
         "npcs" : {
@@ -352,7 +352,7 @@ var rooms = {
 
     // ENDING
     "ending" : {
-        "description" : "You place the four relics in each of the cardinal directions surrounding the crystal at perfect 90 degree increments. As you precisely place the final relic, the whole forest goes ominously silent. A moment passes, but it feels like years.<br><br>A high pitched noise begins to eminate from the crystal. It grows louder, glows brighter, spins faster. Suddenly, in a burst of light and a deafening crack, all falls silent again. A figure stands before you, roughly 5\'11\" and dressed like he's planning to go the beach later, but not just yet. He holds a half-eaten mango.<br><br>\"Oh, cool!\" The beachy-looking guy exclaims. \"Wasn't sure I'd ever make it out of there. Want a bite of magic mango?\" A wizard trapped him in a crystal for it, but he's still determined to eat this mango. But hey, at least he's willing to share. You take a bite from the mango. It is the tastiest, juiciest, magical-est mango you've ever tasted. Overwhelmed by glorious mango flavor, you don't notice the flash of light behind you as Runelius appears! Before the wizard has a chance to turn <i>you</i> into a crystal with a magic blast, Sammy takes the mango out of your hand and throws it at Runelius, knocking him off balance. The wizard's blast narrowly misses your head, bouncing off each of the pillars of the rune ruins before sealing his fate: hitting himself square in the forehead, forever rendering Runelius a floating crystal.<br><br>Sammy knows the way out of the forest, and the two of you walk out together to get brunch, instantly best friends.<br><br>Congratulations! You have made it out of the ominous forest! Your score was a perfect 1.2847x10^17! <a href=\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\">Click here</a> to go back to the home page.",
+        "description" : "You place the four relics in each of the cardinal directions surrounding the crystal at perfect 90 degree increments. As you precisely place the final relic, the whole forest goes ominously silent. A moment passes, but it feels like years.<br><br>A high pitched noise begins to eminate from the crystal. It grows louder, glows brighter, spins faster. Suddenly, in a burst of light and a deafening crack, all falls silent again. A figure stands before you, roughly 5\'11\" and dressed like he's planning to go the beach later, but not just yet. He holds a half-eaten mango.<br><br>\"Oh, cool!\" The beachy-looking guy exclaims. \"Wasn't sure I'd ever make it out of there. Want a bite of magic mango?\" A wizard trapped him in a crystal for it, but he's still determined to eat this mango. But hey, at least he's willing to share. You take a bite from the mango. It is the tastiest, juiciest, magical-est mango you've ever tasted. Overwhelmed by glorious mango flavor, you don't notice the flash of light behind you as Runelius appears! Before the wizard has a chance to turn <i>you</i> into a crystal with a magic blast, Sammy takes the mango out of your hand and throws it at Runelius, knocking him off balance. The wizard's blast narrowly misses your head, bouncing off each of the pillars of the rune ruins before sealing his fate: hitting himself square in the forehead, forever rendering Runelius a floating crystal.<br><br>Sammy knows the way out of the forest, and the two of you walk out together to get brunch, instantly best friends.<br><br>Congratulations! You have made it out of the ominous forest! Your score was a perfect 1.2847x10^17! <span><a href=\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\">Click here</a></span> to go back to the home page.",
         "directions"  : {
             "back" : "rune-ruins",
         },
