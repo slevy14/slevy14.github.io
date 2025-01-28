@@ -19,7 +19,12 @@ function simulateTyping(text, currentChar = 0) {
     if (text.charAt(currentChar) === '<') {
         closeBracket = text.indexOf('>', currentChar);
         html_tag = text.substring(currentChar, closeBracket+1);
-        if (html_tag === "<ul>") {
+        if (html_tag === "<div>") {
+            closeBracket = text.indexOf('</div>', currentChar) + 5;
+        } else if (html_tag === "<span>") {
+            closeBracket = text.indexOf('</span>', currentChar) + 6;
+        }
+        else if (html_tag === "<ul>") {
             closeBracket = text.indexOf('</ul>', currentChar) + 4;
         }
         else if (html_tag === "<b>" || html_tag === "<i>" || html_tag === "<li>" || html_tag === "<a>") {
