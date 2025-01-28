@@ -1,10 +1,19 @@
-/*
- *
- * Typewriter Effect???
- *
- */
+
 
 body{
   width:70%;
   margin: auto;
+  background: #1e1e1e;
+  color: white;
+  font-family:  'Courier New', Courier, monospace;
+}
+
+#user-input{
+  font-family: 'Courier New', Courier, monospace;
+  border: none;
+  background: #1e1e1e;
+  color: white;
+  outline: none;
+  font-size: medium;
+  caret-shape: underscore;
 }
