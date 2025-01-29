@@ -14,3 +14,12 @@ Beyond academics, I spend my time, writing and performing comedy, playing games 
 ------------  
 
 [Check out some stuff I made!](https://slevy14.github.io/projects.html)
+
+
+
+
+
+
+<details>
+[Read my blog that I may or may not write](https://slevy14.github.io/blog/index.html)
+</details>
