@@ -20,6 +20,6 @@ Beyond academics, I spend my time, writing and performing comedy, playing games 
 
 
 
-<details>
-[Read my blog that I may or may not write](https://slevy14.github.io/blog/index.html)
+<details><summary>do not open</summary>
+<a href="https://slevy14.github.io/blog/index.html">Read my blog that I may or may not write</a>
 </details>
