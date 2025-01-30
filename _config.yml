@@ -4,6 +4,7 @@ tagline:          'Portfolio'
 description:      "Games, Education, Math, and Comedy"
 url:              https://slevy14.github.io
 baseurl:          ''
+paginate:         10000
 paginate_path:    "/blog/page:num"
 
 # About and contact
