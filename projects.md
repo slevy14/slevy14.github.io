@@ -79,4 +79,8 @@ A machine learning demo that attempts to identify the pokemon typing of a given 
 
 (Work in progress) Have you ever listened to the cha-cha slide and thought to yourself: "I wish this would never end"? Now it doesn't! <a href="https://slevy14.github.io/infinite-slide.html" target="_blank" rel="noopener noreferrer">Try it out here!</a>
 
+-------------  
 
+<details><summary>do not open</summary>
+<a href="https://slevy14.github.io/blog/index.html">Read my blog that I may or may not write</a>
+</details>
