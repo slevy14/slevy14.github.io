@@ -39,11 +39,9 @@ title: Blog
 
 <!-- <a href="https://slevy14.github.io/blog/archive.html">Archive</a> -->
 <details><summary>Archive</summary>
-<div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
-    <a href="{{ post.url | absolute_url }}">{{ post.date | date_to_string }} {{ post.title }}</a>
+    <a href="{{ post.url | absolute_url }}">{{ post.date | date_to_string }}: {{ post.title }}</a>
   </div>
   {% endfor %}
-</div>
 </details>
