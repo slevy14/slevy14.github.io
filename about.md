@@ -5,11 +5,13 @@ title: About
 
 ## Hello!
 
-As I'm sure you could guess from the sidebar, name of the website, and landing page, my name is **Sammy** (actually it's Samuel, but I go by Sammy or Sam). I'm studying **Computer Science, Education, and Math** at Occidental College in LA. Specifically, my focus is on:
+As I'm sure you could guess from the sidebar, name of the website, and landing page, my name is **Sammy** (actually it's Samuel, but I go by Sammy or Sam). I'm a recent graduate of Occidental College with a B.A. in **Computer Science, Education, and Math**. Specifically, my focus was on:
 - Game Design
 - CS and Math Education at the secondary level
 
-Beyond academics, I spend my time, writing and performing comedy, playing games (video and board), crocheting, and reading.
+Currently, I'm a 5th grade associate teacher at Chadwick School. If you're my student and you found this page: you probably have homework to do, right?
+
+In my spare time, I write and perform comedy, play games (video and board), crochet, and fence.
 
 ------------  
 

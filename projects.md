@@ -32,13 +32,6 @@ A momentum-based action platformer game. Play as Claude, a musical frog, as he p
 
 <iframe src="https://itch.io/embed/2057483" width="552" height="167" frameborder="0"><a href="https://leafguy.itch.io/one-frog-band">One Frog Band by leafguy</a></iframe>
 
--------------   
-
-#### [MAC 250 AR Experience](https://github.com/slevy14/mac250-ar-experience)
-*C#, Unity. &nbsp; 2021*  
-
-A location-based, augmented reality mobile app developed in Unity. Created as a semester long project in collaboration with a media arts class (who designed the art assets), the goal was to create an AR application to showcase their final work. Check out some screenshots and gifs <a href="https://slevy14.github.io/mac250-screenshots.html">here.</a>
-
 -------------  
 
 #### <a href="/Inn_Conspicuous_GDD.pdf">Inn-Conspicuous</a>
@@ -72,9 +65,18 @@ A text-based hyperlink adventure game I made in Twine, based on childhood playgr
 
 A machine learning demo that attempts to identify the pokemon typing of a given image. <a href="https://slevy14.github.io/poke-classifier.html" target="_blank" rel="noopener noreferrer">Try it out here!</a>
 
+-------------   
+
+#### [MAC 250 AR Experience](https://github.com/slevy14/mac250-ar-experience)
+*C#, Unity. &nbsp; 2021*  
+
+A location-based, augmented reality mobile app developed in Unity. Created as a semester long project in collaboration with a media arts class (who designed the art assets), the goal was to create an AR application to showcase their final work. Check out some screenshots and gifs <a href="https://slevy14.github.io/mac250-screenshots.html">here.</a>
+
+
 -------------  
 
-#### The Infinite Slide
+
+<!-- #### The Infinite Slide
 *Javascript. &nbsp; 2024*  
 
 (Work in progress) Have you ever listened to the cha-cha slide and thought to yourself: "I wish this would never end"? Now it doesn't! <a href="https://slevy14.github.io/infinite-slide.html" target="_blank" rel="noopener noreferrer">Try it out here!</a>
@@ -83,4 +85,4 @@ A machine learning demo that attempts to identify the pokemon typing of a given 
 
 <details><summary>do not open</summary>
 <a href="https://slevy14.github.io/blog/index.html">Read my blog that I may or may not write</a>
-</details>
+</details> -->
